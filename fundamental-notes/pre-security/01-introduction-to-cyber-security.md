@@ -10,13 +10,13 @@
 
 *This room covers the introduction to offensive security.*
 
-**Offensive Security** is the practice of proactively attacking systems, networks, and applications, thinking and acting like an attacker, and to find and exploit vulnerabilities before malicious actors do.
+**Offensive Security** is the practice of proactively attacking systems, networks, and applications, thinking and acting like an attacker, to find and exploit vulnerabilities before malicious actors do.
 
 > Red teams are part of the offensive security landscape.
 
-### Key Takeaway
+### Key Takeaways
 
-Offensive security is about adopting an attacker's mindset to find weaknesses before real adversaries can exploit them. The work is proactive rather than reactive, instead of waiting for an incident, offensive practitioners deliberately probe systems, networks, and applications for exploitable flaws. Red teams operate in this space, emulating real-world attacks so that gaps can be identified and fixed before a genuine attacker reaches them.
+Offensive security is about adopting an attacker's mindset to find weaknesses before real adversaries can exploit them. The work is proactive rather than reactive. Offensive practitioners deliberately probe systems, networks, and applications for exploitable flaws. Red teams operate in this space, emulating real-world attacks so that gaps can be identified and fixed before an attacker can reaches them.
 
 ## Defensive Security Introduction
 
@@ -26,9 +26,9 @@ Offensive security is about adopting an attacker's mindset to find weaknesses be
 
 > Blue teams are part of the defensive security landscape.
 
-### Key Takeaway
+### Key Takeaways
 
-Defensive security is the counterpart to offensive work, its goal is to protect systems and to detect and respond to threats as they arise. It combines prevention, stopping intrusions before they succeed, with detection and response, and identifying activity that slips through and acting on it. Blue teams operate in this space, monitoring environments and reacting to incidents to limit the damage an attacker can do.
+Defensive security is the counterpart to offensive work. Its goal is to protect systems and to detect and respond to threats as they arise. It combines prevention, stopping intrusions before they succeed, with detection and response, identifying activity that slips through and acting on it. Blue teams operate in this space, monitoring environments and reacting to incidents to limit the damage an attacker can do.
 
 ## Careers in Cyber
 
@@ -67,6 +67,6 @@ The role of a **security analyst** is to monitor an organization's systems and n
 - Piecing together information to understand what has happened, when, and how.
 - Working with other teams to improve the organization's defenses.
 
-### Key Takeaway
+### Key Takeaways
 
 Cyber security is not a single job but a spectrum of roles spanning both offensive and defensive work. Security engineers build and maintain the defenses, penetration testers probe systems for weaknesses under authorization, and security analysts monitor for and investigate suspicious activity. The roles differ in day-to-day focus but share a common goal: reducing the risk that an organization is compromised.
