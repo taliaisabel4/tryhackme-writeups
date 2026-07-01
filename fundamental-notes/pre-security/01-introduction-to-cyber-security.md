@@ -16,7 +16,7 @@
 
 ### Key Takeaways
 
-Offensive security is about adopting an attacker's mindset to find weaknesses before real adversaries can exploit them. The work is proactive rather than reactive. Offensive practitioners deliberately probe systems, networks, and applications for exploitable flaws. Red teams operate in this space, emulating real-world attacks so that gaps can be identified and fixed before an attacker can reaches them.
+Offensive security is about adopting an attacker's mindset to find weaknesses before real adversaries can exploit them. The work is proactive rather than reactive. Offensive practitioners deliberately probe systems, networks, and applications for exploitable flaws. Red teams operate in this space, emulating real-world attacks so that gaps can be identified and fixed before an attacker can reach them.
 
 ## Defensive Security Introduction
 
@@ -32,7 +32,7 @@ Defensive security is the counterpart to offensive work. Its goal is to protect 
 
 ## Careers in Cyber
 
-*This room covers the different careers in cyber security.*
+*This room covers the different career roles in cyber security.*
 
 ### Security Engineering
 
