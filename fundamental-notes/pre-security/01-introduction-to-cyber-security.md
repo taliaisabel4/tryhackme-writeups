@@ -10,7 +10,7 @@
 
 *This room covers the introduction to offensive security.*
 
-**Offensive Security** is the practice of proactively attacking systems, networks, and applications to find and exploit vulnerabilities before malicious actors do, as well as thinking and acting like an attacker.
+**Offensive Security** is the practice of proactively attacking systems, networks, and applications, thinking and acting like an attacker, and to find and exploit vulnerabilities before malicious actors do.
 
 > Red teams are part of the offensive security landscape.
 
@@ -18,9 +18,9 @@
 
 *This room covers the introduction to defensive security.*
 
-**Defensive Security** is the practice of protecting systems and responding to threats, while focusing on preventing intrusions and detecting/responding to them when they occur.
+**Defensive Security** is the practice of protecting systems and responding to threats, with a focus on preventing intrusions and detecting them when they occur.
 
-> Blue teams are part of the defensive security.
+> Blue teams are part of the defensive security landscape.
 
 ## Careers in Cyber
 
@@ -33,13 +33,13 @@ The role of a **security engineer** is to design, build, and maintain an organiz
 ###### This role involves:
 
 - Designing and maintaining security systems.
-- Keeping up to date with the latest and greatest hacker techniques being used.
+- Keeping up to date with the latest hacker techniques and tools.
 - Documenting processes and procedures.
 - Assessing risk and making sure systems and applications are protected against vulnerabilities.
 
 ### Penetration Testing
 
-The role of a **penetration tester** is authorized to attack systems, networks, and applications to find exploitable vulnerabilities before real attackers do. They simulate real-world attacks and report their findings so weaknesses can be fixed.
+The role of a **penetration tester** is to attack systems, networks, and applications, with authorization, and to find exploitable vulnerabilities before real attackers do. They simulate real-world attacks and report their findings so weaknesses can be fixed.
 
 ###### This role involves:
 
@@ -50,7 +50,7 @@ The role of a **penetration tester** is authorized to attack systems, networks, 
 
 ### Security Analysis
 
-The role of a **security analyst** is to monitor an organization's systems and networks for threats, investigates alerts, and responds to suspicious activity. They triaging incidents and escalating when needed.
+The role of a **security analyst** is to monitor an organization's systems and networks for threats, investigate alerts, and respond to suspicious activity. They triage incidents and escalate when needed.
 
 ###### This role involves:
 
