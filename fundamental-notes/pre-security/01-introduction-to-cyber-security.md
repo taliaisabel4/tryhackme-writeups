@@ -14,6 +14,10 @@
 
 > Red teams are part of the offensive security landscape.
 
+### Key Takeaway
+
+Offensive security is about adopting an attacker's mindset to find weaknesses before real adversaries can exploit them. The work is proactive rather than reactive, instead of waiting for an incident, offensive practitioners deliberately probe systems, networks, and applications for exploitable flaws. Red teams operate in this space, emulating real-world attacks so that gaps can be identified and fixed before a genuine attacker reaches them.
+
 ## Defensive Security Introduction
 
 *This room covers the introduction to defensive security.*
@@ -21,6 +25,10 @@
 **Defensive Security** is the practice of protecting systems and responding to threats, with a focus on preventing intrusions and detecting them when they occur.
 
 > Blue teams are part of the defensive security landscape.
+
+### Key Takeaway
+
+Defensive security is the counterpart to offensive work, its goal is to protect systems and to detect and respond to threats as they arise. It combines prevention, stopping intrusions before they succeed, with detection and response, and identifying activity that slips through and acting on it. Blue teams operate in this space, monitoring environments and reacting to incidents to limit the damage an attacker can do.
 
 ## Careers in Cyber
 
@@ -58,3 +66,7 @@ The role of a **security analyst** is to monitor an organization's systems and n
 - Investigating unusual or suspicious activity, such as strange logins.
 - Piecing together information to understand what has happened, when, and how.
 - Working with other teams to improve the organization's defenses.
+
+### Key Takeaway
+
+Cyber security is not a single job but a spectrum of roles spanning both offensive and defensive work. Security engineers build and maintain the defenses, penetration testers probe systems for weaknesses under authorization, and security analysts monitor for and investigate suspicious activity. The roles differ in day-to-day focus but share a common goal: reducing the risk that an organization is compromised.
