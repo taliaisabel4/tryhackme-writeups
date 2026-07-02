@@ -26,7 +26,7 @@
 
 **Graphics Card**: Handles rendering images, video, and graphics for display. It offloads visual processing from the CPU and is essential for graphics-intensive work like gaming or 3D rendering.
 
-**Input/Output** (I/O):  The mechanisms by which a computer receives data and sends it back out. Input devices (keyboard, mouse) feed data in, while output devices (monitor, printer) deliver results.
+**Input/Output** (I/O): The mechanisms by which a computer receives data and sends it back out. Input devices (keyboard, mouse) feed data in, while output devices (monitor, printer) deliver results.
 
 ### Boot Process of the Computer System
 
@@ -56,6 +56,28 @@ A computer system is built from core hardware components that each serve a disti
 ## Computer Types
 
 *This room covers ...*
+
+All computer types serve very different purposes such as portable everyday computing abd sustained performance at a fixed location.
+
+###### The different types of computers:
+
+| **Computer Type** | **Screen and Keyboard** | **Main Purpose** |
+| --- | --- | --- |
+| Laptop | Yes | Portable everyday computing. |
+| Desktop | Yes | Sustained performance at a fixed location. |
+| Workstation | Yes | Precision and reliability for professional tasks. |
+| Server | No | Providing services to many users over a network. |
+
+###### Computers in everyday objects:
+
+| **Type** | **Purpose** | **Examples** |
+| --- | --- | --- |
+| Smartphone | Pocket-sized computer optimized for battery life and connectivity. | iPhone, Android phone |
+| Tablet | Touch-first computer with larger screen. | iPad, drawing tablet |
+| IoT device | Network-connected device with a single purpose. | Thermostat, smart doorbell |
+| Embedded computer | Computer built into another device. | Coffee maker controller, automatic door sensor |
+
+> The difference between IoT devices and embedded computers is that IoT devices connect to a network to report data or receive commands, while embedded computers might not connect to anything, they do their job inside the machine.
 
 ### Key Takeaways
 
