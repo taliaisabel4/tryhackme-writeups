@@ -2,7 +2,7 @@
 
 *This module ...*
 
-[Inside a Computer System](#inside-a-computer-system) · [Computer Types](#computer-types) · [Client-Server Basics](client-server-basics) · [Virtualization Basics](virtualization-basics) · [Cloud Computing Fundamentals](cloud-computing-fundamentals)
+[Inside a Computer System](#inside-a-computer-system) · [Computer Types](#computer-types) · [Client-Server Basics](#client-server-basics) · [Virtualization Basics](#virtualization-basics) · [Cloud Computing Fundamentals](#cloud-computing-fundamentals)
 
 > Notes from the second section of TryHackMe's **Pre Security** learning path.
 
