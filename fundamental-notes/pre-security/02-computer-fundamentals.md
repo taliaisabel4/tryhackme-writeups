@@ -51,13 +51,13 @@ Once the core components are installed in the computer system, it is time to boo
 
 ### Key Takeaways
 
-A computer system is built from core hardware components that each serve a distinct purpose. The CPU executes instructions, RAM holds data in fast but volatile working memory, storage retains data without power, the motherboard connects everything together, and the PSU supplies the regulated power the rest depends on. Startup then follows a defined sequence: pressing the power button engages the PSU, UEFI firmware initializes the components and runs POST to verify them, a boot device is selected, and the bootloader loads the operating system into RAM before handing over control. Understanding both the components and the boot chain builds the foundation for reasoning about how a system behaves and where it can fail or be interfered with.
+A computer system is built from core hardware components that each serve a distinct purpose: the CPU executes instructions, RAM provides fast volatile working memory, storage retains data without power, the motherboard connects everything, and the PSU supplies power. Startup follows a defined sequence: the power button engages the PSU, UEFI firmware brings the components up and runs POST to verify them, a boot device is selected, and the bootloader loads the operating system into RAM. Understanding both the parts and the boot chain is the foundation for reasoning about how a system behaves and where it can fail or be interfered with.
 
 ## Computer Types
 
 *This room covers ...*
 
-All computer types serve very different purposes such as portable everyday computing abd sustained performance at a fixed location.
+All computer types serve different purposes such as portable everyday computing and sustained performance at a fixed location.
 
 ###### The different types of computers:
 
@@ -73,13 +73,15 @@ All computer types serve very different purposes such as portable everyday compu
 | **Type** | **Purpose** | **Examples** |
 | --- | --- | --- |
 | Smartphone | Pocket-sized computer optimized for battery life and connectivity. | iPhone, Android phone |
-| Tablet | Touch-first computer with larger screen. | iPad, drawing tablet |
+| Tablet | Touch-first computer with a larger screen. | iPad, drawing tablet |
 | IoT device | Network-connected device with a single purpose. | Thermostat, smart doorbell |
 | Embedded computer | Computer built into another device. | Coffee maker controller, automatic door sensor |
 
-> The difference between IoT devices and embedded computers is that IoT devices connect to a network to report data or receive commands, while embedded computers might not connect to anything, they do their job inside the machine.
+> The difference between IoT devices and embedded computers is that IoT devices connect to a network to report data or receive commands, while embedded computers might not connect to anything and simply do their job inside the machine.
 
 ### Key Takeaways
+
+Computers come in many forms, each shaped by its purpose: portable laptops, fixed desktops and workstations for sustained or precise work, and servers that provide services to many users over a network. Computing also extends into everyday objects, from smartphones and tablets to IoT and embedded devices built for narrow, dedicated tasks. The key distinction among those smaller devices is connectivity: IoT devices communicate over a network, whereas embedded computers may operate entirely inside the device they control.
 
 ## Client-Server Basics
 
