@@ -176,7 +176,7 @@ Virtualization lets a single physical machine run multiple isolated systems, eac
 
 ### Cloud Computing Overview
 
-Cloud computing is the perfect solution for the challenges in the application you’ve designed, such as moving your files from a single laptop to online storage that you can access anywhere.
+Cloud computing is the delivery of computing resources, such as servers, storage, and software, over the internet on demand.
 
 ### Cloud Benefits and Characteristics
 
