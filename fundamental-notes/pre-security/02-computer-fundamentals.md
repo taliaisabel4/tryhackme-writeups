@@ -172,7 +172,7 @@ Virtualization lets a single physical machine run multiple isolated systems, eac
 
 ## Cloud Computing Fundamentals
 
-*This room covers ...*
+*This room covers the fundamentals of cloud computing, including its benefits, deployment types, and service models.*
 
 ### Cloud Computing Overview
 
@@ -197,16 +197,18 @@ The flexibility provided by cloud computing allows applications to be run in dif
 
 ###### The deployment types you can choose for a cloud environment:
 
-- **Public cloud**: 
-- **Private cloud**: 
-- **Hybrid cloud**: 
+- **Public cloud**: Computing resources (servers, storage, applications) owned and operated by a third-party cloud provider and delivered over the internet
+- **Private cloud**: Cloud infrastructure dedicated to a single organization. It can be hosted on-premises or by a third party, but the resources aren't shared with anyone else.
+- **Hybrid cloud**: A combination of public and private cloud that lets data and applications move between the two.
 
 Just like there are different ways to deploy a cloud environment, there are also different ways to use cloud services. Depending on your experience and needs, you can choose the level of responsibility that fits your application.
 
 ###### The main cloud service models:
 
-- **Infrastructure as a Service** (IaaS): 
-- **Platform as a Service** (PaaS): 
-- **Software as a Service** (SaaS):
+- **Infrastructure as a Service** (IaaS): The provider gives you the raw infrastructure (virtual machines, storage, networking); you manage the OS, runtime, and applications on top.
+- **Platform as a Service** (PaaS): The provider manages the infrastructure and platform (OS, runtime, tools); you just build and deploy your applications.
+- **Software as a Service** (SaaS): The provider delivers a complete, ready-to-use application over the internet; you simply use it, usually through a browser.
 
 ### Key Takeaways
+
+Cloud computing delivers computing resources such as servers and storage over the internet on demand, removing the need to own and maintain physical hardware. Its main advantages are scalability, pay-as-you-go pricing, high availability, and global access, which let applications grow and adapt without large upfront investment. Cloud environments can be deployed as public, private, or hybrid models, and consumed through service models offering increasing levels of provider management: IaaS, PaaS, and SaaS.
