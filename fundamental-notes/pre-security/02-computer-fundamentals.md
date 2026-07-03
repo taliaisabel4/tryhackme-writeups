@@ -123,6 +123,49 @@ The client-server model underpins web communication: a client such as a browser 
 
 *This room covers ...*
 
+### Virtualization Overview
+
+Before the concept of virtualization, the rule of thumb in IT was: *“One server = one application.”*
+
+Each virtual computer acts as an independent system with its own operating system, apps, and settings, even though they all share the same physical hardware underneath.
+
+### Virtualization Components
+
+A **hypervisor** is the core technology behind virtualization. It's the software that creates and manages lab machines.
+
+###### It is a special piece of software that:
+
+- Divides a physical computer into multiple virtual ones.
+- Gives each lab machine its own share of CPU, memory, and storage.
+- Keeps everything isolated and safe.
+- Manages the lifecycle of lab machines (start, stop, pause, clone, delete).
+
+Hypervisors have two main types of implementation, each of which is used for specific scenarios:
+
+- **Type 1 Hypervisors**: Can run directly on the physical hardware, making them fast, efficient, and ideal for servers and professional environments.
+- **Type 2 Hypervisors**: Can run within an existing operating system, making them easier to install and ideal for learning, testing, or small setups.
+
+A **Virtual Macine** (VM) is a virtual computer created by the hypervisor.
+
+> You can deploy VMs on your own computer using tools such as Oracle VirtualBox and VMware Workstation.
+
+###### Even though it’s virtual, it behaves as a real machine:
+
+- It has its own virtual CPU, RAM, storage, and network.
+- It can run any operating system (Windows, Linux, etc.).
+- It’s completely isolated from other VMs.
+
+A **container** is a lightweight, isolated environment that runs a single application and all the necessary components to support it. Instead of bringing a whole separate operating system, a container borrows the core of the existing system by running on the kernel, which is the part of an operating system that communicates with the hardware and manages resources such as memory and running programs.
+
+> Because containers share this kernel, they start quickly and use fewer resources than full lab machines, but it also means they must match the host system’s type.
+
+###### Containers behave like small, self-contained spaces because:
+
+- They package the application and its dependencies (libraries, tools, versions).
+- They share the host’s operating system, so they start almost instantly.
+- They remain isolated from each other, so a misbehaving container doesn’t affect the others.
+- They can run consistently on any machine, making them perfect for development, testing, and scalable deployments.
+
 ### Key Takeaways
 
 ## Cloud Computing Fundamentals
