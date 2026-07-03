@@ -121,7 +121,7 @@ The client-server model underpins web communication: a client such as a browser 
 
 ## Virtualization Basics
 
-*This room covers ...*
+*This room covers the basics of virtualization, including hypervisors, virtual machines, and containers.*
 
 ### Virtualization Overview
 
@@ -142,8 +142,8 @@ A **hypervisor** is the core technology behind virtualization. It's the software
 
 Hypervisors have two main types of implementation, each of which is used for specific scenarios:
 
-- **Type 1 Hypervisors**: Runs directly on the physical hardware, making them fast, efficient, and ideal for servers and professional environments.
-- **Type 2 Hypervisors**: Runs within an existing operating system, making them easier to install and ideal for learning, testing, or small setups.
+- **Type 1 Hypervisors**: Run directly on the physical hardware, making them fast, efficient, and ideal for servers and professional environments.
+- **Type 2 Hypervisors**: Run within an existing operating system, making them easier to install and ideal for learning, testing, or small setups.
 
 A **Virtual Machine** (VM) is a virtual computer created by the hypervisor.
 
@@ -167,6 +167,8 @@ A **container** is a lightweight, isolated environment that runs a single applic
 - They can run consistently on any machine, making them perfect for development, testing, and scalable deployments.
 
 ### Key Takeaways
+
+Virtualization lets a single physical machine run multiple isolated systems, each with its own operating system and share of the hardware, managed by a hypervisor that runs either directly on the hardware (Type 1) or on top of an existing operating system (Type 2). Containers take a lighter approach, packaging a single application with its dependencies and sharing the host's kernel, which makes them start faster and use fewer resources than full virtual machines.
 
 ## Cloud Computing Fundamentals
 
