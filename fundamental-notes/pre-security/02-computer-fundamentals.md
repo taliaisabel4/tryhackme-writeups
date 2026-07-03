@@ -1,6 +1,6 @@
 # Computer Fundamentals
 
-*This module ...*
+*This module builds up from a single computer's internal components to how machines communicate with each other, run virtualized systems, and scale into the cloud.*
 
 [Inside a Computer System](#inside-a-computer-system) · [Computer Types](#computer-types) · [Client-Server Basics](#client-server-basics) · [Virtualization Basics](#virtualization-basics) · [Cloud Computing Fundamentals](#cloud-computing-fundamentals)
 
@@ -176,7 +176,7 @@ Virtualization lets a single physical machine run multiple isolated systems, eac
 
 ### Cloud Computing Overview
 
-Cloud computing is the delivery of computing resources, such as servers, storage, and software, over the internet on demand.
+Cloud computing is the delivery of computing resources, such as servers, storage, and software, over the internet on demand. Instead of owning and maintaining physical hardware, you can rent what you need and access it from anywhere, which solves problems like limited capacity, high upfront costs, and slow scaling.
 
 ### Cloud Benefits and Characteristics
 
@@ -197,7 +197,7 @@ The flexibility provided by cloud computing allows applications to be run in dif
 
 ###### The deployment types you can choose for a cloud environment:
 
-- **Public cloud**: Computing resources (servers, storage, applications) owned and operated by a third-party cloud provider and delivered over the internet
+- **Public cloud**: Computing resources (servers, storage, applications) owned and operated by a third-party cloud provider and delivered over the internet.
 - **Private cloud**: Cloud infrastructure dedicated to a single organization. It can be hosted on-premises or by a third party, but the resources aren't shared with anyone else.
 - **Hybrid cloud**: A combination of public and private cloud that lets data and applications move between the two.
 
