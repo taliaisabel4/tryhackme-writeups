@@ -117,7 +117,7 @@ This request retrieves the TryHackMe website's homepage. When you open a browser
 
 ### Key Takeaways
 
-The client-server model underpins web communication: a client such as a browser sends requests, and a server responds with the requested resource. HTTP is the protocol governing this exchange, and it is stateless, meaning each request is handled on its own without the server remembering previous ones. Requests use defined methods such as GET, which retrieves a resource, and each response carries a status code indicating the outcome along with any requested data.
+The client-server model underpins web communication: a client such as a browser sends requests, and a server responds with the requested resource. HTTP is the protocol governing this exchange, and it is stateless, meaning each request is handled on its own without the server remembering previous ones. Requests use defined methods such as `GET`, which retrieves a resource, and each response carries a status code indicating the outcome along with any requested data.
 
 ## Virtualization Basics
 
@@ -140,7 +140,7 @@ A **hypervisor** is the core technology behind virtualization. It's the software
 - Keeps everything isolated and safe.
 - Manages the lifecycle of virtual machines (start, stop, pause, clone, delete).
 
-Hypervisors have two main types of implementation, each of which is used for specific scenarios:
+###### Hypervisors have two main types of implementation, each of which is used for specific scenarios:
 
 - **Type 1 Hypervisors**: Run directly on the physical hardware, making them fast, efficient, and ideal for servers and professional environments.
 - **Type 2 Hypervisors**: Run within an existing operating system, making them easier to install and ideal for learning, testing, or small setups.
@@ -176,7 +176,7 @@ Virtualization lets a single physical machine run multiple isolated systems, eac
 
 ### Cloud Computing Overview
 
-Cloud computing is the delivery of computing resources, such as servers, storage, and software, over the internet on demand. Instead of owning and maintaining physical hardware, you can rent what you need and access it from anywhere.
+**Cloud computing** is the delivery of computing resources, such as servers, storage, and software, over the internet on demand. Instead of owning and maintaining physical hardware, you can rent what you need and access it from anywhere.
 
 ### Cloud Benefits and Characteristics
 
