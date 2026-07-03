@@ -127,25 +127,25 @@ The client-server model underpins web communication: a client such as a browser 
 
 Before the concept of virtualization, the rule of thumb in IT was: *“One server = one application.”*
 
-Each virtual computer acts as an independent system with its own operating system, apps, and settings, even though they all share the same physical hardware underneath.
+Virtual computers act as independent systems, each with its own operating system, apps, and settings, even though they all share the same physical hardware underneath.
 
 ### Virtualization Components
 
-A **hypervisor** is the core technology behind virtualization. It's the software that creates and manages lab machines.
+A **hypervisor** is the core technology behind virtualization. It's the software that creates and manages virtual machines.
 
 ###### It is a special piece of software that:
 
 - Divides a physical computer into multiple virtual ones.
-- Gives each lab machine its own share of CPU, memory, and storage.
+- Gives each virtual machine its own share of CPU, memory, and storage.
 - Keeps everything isolated and safe.
-- Manages the lifecycle of lab machines (start, stop, pause, clone, delete).
+- Manages the lifecycle of virtual machines (start, stop, pause, clone, delete).
 
 Hypervisors have two main types of implementation, each of which is used for specific scenarios:
 
-- **Type 1 Hypervisors**: Can run directly on the physical hardware, making them fast, efficient, and ideal for servers and professional environments.
-- **Type 2 Hypervisors**: Can run within an existing operating system, making them easier to install and ideal for learning, testing, or small setups.
+- **Type 1 Hypervisors**: Runs directly on the physical hardware, making them fast, efficient, and ideal for servers and professional environments.
+- **Type 2 Hypervisors**: Runs within an existing operating system, making them easier to install and ideal for learning, testing, or small setups.
 
-A **Virtual Macine** (VM) is a virtual computer created by the hypervisor.
+A **Virtual Machine** (VM) is a virtual computer created by the hypervisor.
 
 > You can deploy VMs on your own computer using tools such as Oracle VirtualBox and VMware Workstation.
 
@@ -157,7 +157,7 @@ A **Virtual Macine** (VM) is a virtual computer created by the hypervisor.
 
 A **container** is a lightweight, isolated environment that runs a single application and all the necessary components to support it. Instead of bringing a whole separate operating system, a container borrows the core of the existing system by running on the kernel, which is the part of an operating system that communicates with the hardware and manages resources such as memory and running programs.
 
-> Because containers share this kernel, they start quickly and use fewer resources than full lab machines, but it also means they must match the host system’s type.
+> Because containers share this kernel, they start quickly and use fewer resources than full virtual machines. However, this also means they must match the host system's type.
 
 ###### Containers behave like small, self-contained spaces because:
 
