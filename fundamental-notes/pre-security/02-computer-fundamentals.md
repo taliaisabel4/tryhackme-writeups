@@ -127,7 +127,7 @@ The client-server model underpins web communication: a client such as a browser 
 
 Before the concept of virtualization, the rule of thumb in IT was: *“One server = one application.”*
 
-Virtual computers act as independent systems, each with its own operating system, apps, and settings, even though they all share the same physical hardware underneath.
+Virtual computers act as independent systems, each with its own operating system, applications, and settings, even though they all share the same physical hardware underneath.
 
 ### Virtualization Components
 
@@ -176,7 +176,7 @@ Virtualization lets a single physical machine run multiple isolated systems, eac
 
 ### Cloud Computing Overview
 
-Cloud computing is the delivery of computing resources, such as servers, storage, and software, over the internet on demand. Instead of owning and maintaining physical hardware, you can rent what you need and access it from anywhere, which solves problems like limited capacity, high upfront costs, and slow scaling.
+Cloud computing is the delivery of computing resources, such as servers, storage, and software, over the internet on demand. Instead of owning and maintaining physical hardware, you can rent what you need and access it from anywhere.
 
 ### Cloud Benefits and Characteristics
 
