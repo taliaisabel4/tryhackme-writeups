@@ -93,7 +93,7 @@ Computers come in many forms, each shaped by its purpose: portable laptops, fixe
 
 > Although the protocol itself is stateless, modern websites and web applications implement mechanisms to introduce statefulness at the application level.
 
-###### The main specifications that define HTTP:
+###### The core methods HTTP defines:
 
 - `GET`
 - `POST`
@@ -116,6 +116,8 @@ The **`GET`** method can retrieve a resource from a web server.
 This request retrieves the TryHackMe website's homepage. When you open a browser (this is the client) and type "https://tryhackme.com," the browser constructs the message behind the scenes using information you provide and other fields defined in the HTTP specifications. When the web server receives the request, it sends a response that includes a status code (indicating the type of response) and the requested information.
 
 ### Key Takeaways
+
+The client-server model underpins web communication: a client such as a browser sends requests, and a server responds with the requested resource. HTTP is the protocol governing this exchange, and it is stateless, meaning each request is handled on its own without the server remembering previous ones. Requests use defined methods such as GET, which retrieves a resource, and each response carries a status code indicating the outcome along with any requested data.
 
 ## Virtualization Basics
 
