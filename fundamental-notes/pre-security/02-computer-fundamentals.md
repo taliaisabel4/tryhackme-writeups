@@ -55,7 +55,7 @@ A computer system is built from core hardware components that each serve a disti
 
 ## Computer Types
 
-*This room covers ...*
+*This room covers the different types of computers and the purposes they serve.*
 
 All computer types serve different purposes such as portable everyday computing and sustained performance at a fixed location.
 
@@ -85,7 +85,35 @@ Computers come in many forms, each shaped by its purpose: portable laptops, fixe
 
 ## Client-Server Basics
 
-*This room covers ...*
+*This room covers the basics of the client-server model.*
+
+### Web Communication
+
+**Hypertext Transfer Protocol Secure** (HTTPS) is a stateless client-server protocol used for the World Wide Web. This means that each request is processed independently, without the server retaining information about previous requests.
+
+> Although the protocol itself is stateless, modern websites and web applications implement mechanisms to introduce statefulness at the application level.
+
+###### In the main specifications that define HTTP, there are 9 core commands:
+
+- `GET`
+- `POST`
+- `PUT`
+- `DELETE`
+- `PATCH`
+- `HEAD`
+- `OPTIONS`
+- `CONNECT`
+- `TRACE`
+
+#### GET
+
+The **`GET`** method can retrieve a resource from a web server.
+
+###### An example to use the `GET` command:
+
+`GET https://tryhackme.com/index.php`
+
+This request retrieves the TryHackMe website's homepage. When you open a browser (this is the client) and type "https://tryhackme.com," the browser constructs the message behind the scenes using information you provide and other fields defined in the HTTP specifications. When the web server receives the request, it sends a response that includes a status code (indicating the type of response) and the requested information. 
 
 ### Key Takeaways
 
