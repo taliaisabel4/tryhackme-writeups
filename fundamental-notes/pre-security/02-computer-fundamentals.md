@@ -174,4 +174,39 @@ Virtualization lets a single physical machine run multiple isolated systems, eac
 
 *This room covers ...*
 
+### Cloud Computing Overview
+
+Cloud computing is the perfect solution for the challenges in the application you’ve designed, such as moving your files from a single laptop to online storage that you can access anywhere.
+
+### Cloud Benefits and Characteristics
+
+The cloud was designed to address common problems, including limited capacity, high costs, and slow growth.
+
+###### The following benefits and characteristics explain how cloud computing makes applications easier to run, scale, and manage:
+
+- **Scalability**: Easily scale up or down as your application's needs change.
+- **On-demand self-service**: Create or remove servers and storage instantly, without waiting for hardware.
+- **Pay only for what you use**: You are charged based on usage, not upfront costs.
+- **Security**: Cloud providers protect the infrastructure with strong security measures.
+- **High availability**: Applications keep running even if part of the system fails.
+- **Global access**: Your application can be accessed by users anywhere in the world.
+
+### Types of Cloud
+
+The flexibility provided by cloud computing allows applications to be run in different ways, depending on your needs and level of control. Because of this, cloud providers offer multiple models for deploying and using applications, each suited to different scenarios.
+
+###### The deployment types you can choose for a cloud environment:
+
+- **Public cloud**: 
+- **Private cloud**: 
+- **Hybrid cloud**: 
+
+Just like there are different ways to deploy a cloud environment, there are also different ways to use cloud services. Depending on your experience and needs, you can choose the level of responsibility that fits your application.
+
+###### The main cloud service models:
+
+- **Infrastructure as a Service** (IaaS): 
+- **Platform as a Service** (PaaS): 
+- **Software as a Service** (SaaS):
+
 ### Key Takeaways
