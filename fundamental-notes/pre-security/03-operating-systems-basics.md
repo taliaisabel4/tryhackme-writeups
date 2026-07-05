@@ -2,7 +2,7 @@
 
 *This module ...*
 
-[](#) · [](#) · [](#) · [](#) · [](#)
+[](#) · [Windows Basics](#windows-basics) · [Linux CLI Basics](#linux-cli-basics) · [Windows CLI Basics](#windows-cli-basics) · [Operating System Security](#operating-system-security)
 
 > Notes from the third section of TryHackMe's **Pre Security** learning path.
 
