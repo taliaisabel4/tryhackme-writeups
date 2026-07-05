@@ -8,11 +8,11 @@
 
 ## Operating Systems: Introduction
 
-*This room covers ...*
+*This room covers what an operating system is, the core duties it performs, and the different types of OS in use today.*
 
 ### The Invisible Manager
 
-An **Operating System** (OS) is the core software that coordinates everything happening on a computer. It sits between the user, applications, and the system’s physical hardware, acting as the invisible manager that keeps the entire machine running as one unified system.
+An **Operating System** (OS) is the core software that coordinates everything happening on a computer. It sits between the user, applications, and the system's physical hardware, acting as the invisible manager that keeps the entire machine running as one unified system.
 
 #### System Privilege Layers
 
@@ -32,15 +32,15 @@ Every OS is responsible for a few core duties that allow your computer to run sa
 
 | **OS Responsibility** | **What the OS Does** | **Example** |
 | --- | --- | --- |
-| Process Management | Creates, schedules, prioritizes, and terminates running programs. The OS decides how much CPU time each process gets, making multitasking feel seamless. | Opening multiple apps, like your browser, music player, and social media, without your computer freezing |
-| Memory Management | Allocates RAM to processes, protects the app's memory from other processes, and reclaims memory when apps are closed. When RAM runs low, the OS uses virtual memory to keep your system stable. | Opening multiple app at once, the OS allocates RAM to each one and keeps them isolated so they don’t interfere or crash each other. |
+| Process Management | Creates, schedules, prioritizes, and terminates running programs. The OS decides how much CPU time each process gets, making multitasking feel seamless. | Opening multiple apps, like your browser, music player, and social media, without your computer freezing. |
+| Memory Management | Allocates RAM to processes, protects the app's memory from other processes, and reclaims memory when apps are closed. When RAM runs low, the OS uses virtual memory to keep your system stable. | Opening multiple apps at once, the OS allocates RAM to each one and keeps them isolated so they don't interfere or crash each other. |
 | File System Management | Organizes files into directories, handles naming, paths, permissions, metadata (name, size, type, timestamps). | Creating a new folder, saving a photo, or setting a file to "read only". |
 | User Management | Handles multiple user accounts, authentication, and permissions to determine who can access what. | Logging in with your password and keeping your files inaccessible to other user accounts. |
-| Device Management | Loads drivers and provides a universal interface (hardware abstraction layer), so apps can say “print this” or “play this sound”. | Plugging in a new mouse, printer, or external hard drive and having it work immediately. |
+| Device Management | Loads drivers and provides a universal interface (hardware abstraction layer), so apps can say "print this" or "play this sound". | Plugging in a new mouse, printer, or external hard drive and having it work immediately. |
 
-#### Operating System Security
+#### Operating System Built-In Security
 
-Every OS acts as a security function.
+Every OS performs essential security functions.
 
 ###### At a basic level, your operating system handles:
 
@@ -63,7 +63,7 @@ Not all operating systems are the same. Different devices and jobs demand differ
 
 | **Operating System Type** | **Primary Use Case** | **Key Characteristics** |
 | --- | --- | --- |
-| Desktop | PCs, daily work, gaming, content creation | Rich graphic interface, runs many apps at once, user-focused |
+| Desktop | PCs, daily work, gaming, content creation | Graphical, runs many apps at once, user-focused |
 | Server | Databases, cloud services, back-end | Headless (no GUI), maximum uptime, multi-user, remote access |
 | Mobile | Smartphones and tablets | Touch-based UI, power efficient, app sandboxing |
 | Embedded | Appliances, cars, IoT devices, smart TVs | Tiny footprint, runs on limited hardware |
@@ -71,7 +71,7 @@ Not all operating systems are the same. Different devices and jobs demand differ
 
 #### Real World Operating Systems
 
-In the real world, there are many types of OS's.
+In the real world, there are many operating systems in use,
 
 ###### The common versions and distributions:
 
@@ -90,7 +90,7 @@ In the real world, there are many types of OS's.
   - **Unix**: Large enterprises, finance, telecom, and government.
     - *IBM AIX, Oracle Solaris*
 - **Mobile**
-  - **Andriod**: The most widely used mobile OS, which runs on phones, tablets, and smart devices.
+  - **Android**: The most widely used mobile OS, which runs on phones, tablets, and smart devices.
     - *Android 14 - 16, Manufacturer versions*
   - **iOS**: Apple's mobile OS running on iPhones, iPads, and other devices.
     - *iOS 17, 18, 26*
@@ -106,6 +106,8 @@ In the real world, there are many types of OS's.
     - *Alpine Linux, Bottlerocket AWS, Flatcar Linux*
 
 ### Key Takeaways
+
+An operating system is the core software sitting between users, applications, and hardware, coordinating the whole machine while enforcing a strict separation between privileged kernel space and restricted user space. Its core duties span process, memory, file system, user, and device management, alongside security functions such as authentication, permissions, and process isolation. Operating systems come in many forms, from desktop and server to mobile, embedded, and cloud, and are interacted with through either a graphical (GUI) or command-line (CLI) interface.
 
 ## Windows Basics
 
