@@ -2,9 +2,13 @@
 
 *This module ...*
 
+[](#) · [](#) · [](#) · [](#) · [](#)
+
+> Notes from the third section of TryHackMe's **Pre Security** learning path.
+
 ### Key Takeaways
 
-## Operating Systems - Introduction
+## Operating Systems: Introduction
 
 *This room covers ...*
 
