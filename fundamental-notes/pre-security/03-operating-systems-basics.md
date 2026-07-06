@@ -252,6 +252,20 @@ The **Windows Security** application is your central dashboard for managing Wind
 
 *This room covers ...*
 
+### Interacting with the Terminal
+
+These are the core navigation commands that every linux users use.
+
+###### Core navigation commands:
+
+- **`pwd`**: 
+- **`ls`**:
+- **`cd`**:
+- **`find`**:
+- **`cat`**:
+- **`whoami`**
+- **`uname`**
+
 ### Key Takeaways
 
 ## Windows CLI Basics
