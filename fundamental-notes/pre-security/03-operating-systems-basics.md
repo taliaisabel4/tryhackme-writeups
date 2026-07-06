@@ -252,9 +252,9 @@ The **Windows Security** application is your central dashboard for managing Wind
 
 *This room covers ...*
 
-### Interacting with the Terminal
+### Interacting with the Terminal using Linux Commands
 
-These are the core navigation commands that every linux users use.
+These are the Linux core navigation commands that every Linux users use.
 
 ###### Core navigation commands:
 
@@ -271,6 +271,20 @@ These are the core navigation commands that every linux users use.
 ## Windows CLI Basics
 
 *This room covers ...*
+
+### Interacting with the Terminal using Windows Commands
+
+These are the Windows core navigation commands that every Window users use.
+
+###### Core navigation commands:
+
+- **`cd`**: 
+- **`dir`**:
+- **`type`**:
+- **`whoami`**:
+- **`hostname`**:
+- **`systeminfo`**
+- **`ipconfig`**
 
 ### Key Takeaways
 
