@@ -292,4 +292,36 @@ These are the Windows core navigation commands that every Window users use.
 
 *This room covers ...*
 
+### Introduction to Operating System Security
+
+Operating systems include Windows, macOS, iOS, Android, Chrome OS, and Linux. 
+
+The **Operating System** (OS) is the layer sitting between the hardware and the applications and programs you are running.
+
+###### When we talk about security, we should think of protecting three things:
+
+1. Confidentiality
+2. Integrity
+3. Availability
+
+#### Authentication and Weak Passwords
+
+Authentication is the act of verifying your identity, be it a local or a remote system
+
+###### Authentication can be achieved via three main ways:
+
+- Something you know, such as a password or a PIN code.
+- Something you are, such as a fingerprint.
+- Something you have, such as a phone number via which you can receive an SMS message.
+
+#### Weak File Permissions
+
+Proper security dictates the principle of least privilege. In a work environment, you want any file accessible only by those who need to access it to get work done. Weak file permissions make it easy for the adversary to attack confidentiality and integrity. They can attack confidentiality as weak permissions allow them to access files they should not be able to access. Moreover, they can attack integrity as they might modify files that they should not be able to edit.
+
+#### Malicious Programs
+
+Depending on the type of malicious program, it can attack confidentiality, integrity, and availability.
+
+> Some types of malicious programs, such as Trojan horses, give the attacker access to your system. Consequently, the attacker would be able to read your files or even modify them.
+
 ### Key Takeaways
