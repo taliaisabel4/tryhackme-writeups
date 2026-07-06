@@ -1,6 +1,6 @@
 # Operating System Basics
 
-*This module ...*
+*This module moves from what an operating system is and how Windows works, to navigating both Linux and Windows from the command line, and finishes with the fundamentals of operating system security.*
 
 [Operating Systems: Introduction](#operating-systems-introduction) · [Windows Basics](#windows-basics) · [Linux CLI Basics](#linux-cli-basics) · [Windows CLI Basics](#windows-cli-basics) · [Operating System Security](#operating-system-security)
 
@@ -292,7 +292,7 @@ These are the Windows core navigation commands that every Window users use.
 
 ## Operating System Security
 
-*This room covers ...*
+*This room covers the fundamentals of operating system security, including the CIA triad, authentication, file permissions, and malicious programs.*
 
 ### Introduction to Operating System Security
 
@@ -327,3 +327,5 @@ Depending on the type of malicious program, it can attack confidentiality, integ
 > Some types of malicious programs, such as Trojan horses, give the attacker access to your system. Consequently, the attacker would be able to read your files or even modify them.
 
 ### Key Takeaways
+
+Operating system security centers on protecting three core properties: confidentiality, integrity, and availability, together known as the CIA triad. Authentication verifies a user's identity through something they know (a password or PIN), something they are (a fingerprint), or something they have (a device that receives a code), while enforcing the principle of least privilege through file permissions limits what each user can access. Weak passwords, overly broad permissions, and malicious programs such as Trojan horses each threaten one or more parts of the triad, which is why controlling access and limiting exposure are central to keeping a system secure.
