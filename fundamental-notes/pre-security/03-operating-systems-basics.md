@@ -113,6 +113,139 @@ An operating system is the core software sitting between users, applications, an
 
 *This room covers ...*
 
+### Logging In and Authentication
+
+The authentication process verifies your identity and determines the actions you're allowed to take once logged in. When a Windows system starts, it displays a login screen where a user account must be selected and authenticated with a password, PIN, or another verification method.
+
+###### Windows uses these account types:
+
+- **Guest**: A restricted account intended for temporary access, with minimal permissions and no ability to change system settings.
+- **Standard**: A user account for everyday tasks, such as running applications and changing personal settings, without access to system-wide changes.
+- **Administrator**: A privileged account with full control over the system, including software installation, configuration changes, and user management.
+
+#### Windows Desktop
+
+The **Windows Desktop** is the first thing that shows up once you log in.
+
+###### You're presented with two main areas:
+
+- **Desktop**: The main workspace where files, folders, and shortcuts live.
+- **Taskbar**: A control strip that provides access to applications, system tools, settings, and notifications.
+
+###### While newer Windows versions may differ slightly, these core components and concepts remain consistent:
+
+- **Desktop Icons**: Shortcuts to items like the Recycle Bin, folders, and frequently used applications. It is fully customizable.
+- **Start Menu**: Primary way to access applications, settings, and power options. From here, you can log out, restart, or power off your machine.
+- **Search**: Quickly find applications, files, folders, and system settings by using keywords.
+- **Task View**: Allows you to see all currently open windows and quickly switch between them.
+- **Pinned Applications and Folders**: Your most used applications and folders can be pinned here.
+- **Network and Audio Settings**: This section can be customized to suit your needs.
+- **Date and Time**: Opens up to a full calendar. Date and time settings can be accessed here.
+- **Notifications**: Displays computer or application notifications. Network and other settings can also be accessed.
+
+#### Build-In Tools and Apps
+
+Windows also includes simple but powerful tools such as **Notepad** for editing text files and **File Explorer** for navigating and managing files. These tools are available immediately and form the foundation of everyday Windows usage. All of them can be accessed via the Start Menu and search bar.
+
+#### Getting System Information
+
+Windows includes a built-in Settings application that allows you to configure and view information about your system.
+
+> Within the Settings app, there's a helpful section called **About your PC**, that provides an overview of security, device, and operating system information.
+
+#### File Exploration and Management
+
+Windows uses a hierarchical folder structure, meaning folders can contain other folders and files inside them. This structure helps keep data organized and makes it easier to locate information as systems grow larger.
+
+> Common locations, such as the **Desktop**, **Documents**, and **Downloads**, serve as primary directories for storing files.
+
+### Configuring and Securing Applications
+
+**Applications** are the programs and tools you use to perform tasks on your computer. These processes enable you to make the necessary changes to your system, ensuring you have exactly what you need and that your system remains secure.
+
+#### Updating Your Applications
+
+Keeping your operating system and applications up to date is an important part of maintaining a secure and stable system. Updates will often include security patches, performance updates, and bug fixes.
+
+#### Windows Updates
+
+Windows includes a built-in update tool called **Windows Update**, which keeps the OS and some native applications and security features up to date.
+
+> Windows Update can be accessed through the Settings app and may install updates automatically, depending on your configuration.
+
+#### Updating Applications
+
+Application updates work differently depending on how the software is installed.
+
+###### These include:
+
+- Built-in applications may update automatically in the background.
+- Third-party applications often include their own update mechanisms.
+- Some applications will prompt you to update upon launch.
+- Some require you to check for updates or download a new installer manually.
+
+#### Installing and Uninstalling Applications
+
+Installing applications...
+
+###### There are two ways to install applications:
+
+- **Microsoft Store**: Provides a curated and safe option for installing apps to Windows, although it is not available by default on Windows Server.
+- **From the Internet**: In many environments, apps are installed by downloading an installer directly from a trusted vendor's website. They usually come in an `.exe` or `.msi` file and guide the user through the installation process.
+
+###### There are multiple ways to uninstall programs:
+
+- Using the Microsoft Store for installed applications.
+- Add or remove programs feature in system settings.
+- Uninstall a program section of the Control Panel.
+- Using an application's built-in uninstaller.
+
+#### Diving into Settings
+
+There are two primary ways in which a Windows user can modify their environment.
+
+###### There are existing shortcuts for each of the tools below placed on your Desktop:
+
+- **Windows Settings**: A modern, centralized location for configuring system, device, personalization, and security settings in Windows.
+- **Control Panel**: A legacy management interface that provides access to older system configuration tools still required for specific administrative tasks.
+
+> **Windows Settings** and the **Control Panel** enable you to view and modify how your Windows system operates.
+
+#### The Task Manager
+
+**Task Manager** is a built-in Windows tool that allows you to monitor what is happening on your system in real time. It allows you to view running applications and background processes, as well as check system performance, including CPU and memory usage.
+
+###### Task Manager has five tabs to help you keep track of your system:
+
+- **Processes**: Currently running apps and background processes, and their resource usage.
+- **Performance**: Graphs and statistics for system resources such as CPU, memory, and network.
+- **Users**: Currently logged-in users and used resources .
+- **Details**: A more technical view of running processes, including process IDs (PIDs).
+- **Services**: Windows services and their current status (running or stopped).
+
+#### Native Windows Security
+
+Windows offers built-in security tools designed to help protect your system from threats such as malware, insecure applications, and unauthorized network access. These are enabled by default and allow the monitoring and control of your system's security. 
+
+The **Windows Security** application is your central dashboard for managing Windows' built-in protection measures.
+
+###### It is divided into four main sections, each focusing on a different area of system security:
+
+- **Virus & threat protection**: Helps detect and remove malicious software using real-time protection and customizable scans.
+- **Firewall & network protection**: Controls incoming and outgoing network traffic to help prevent unauthorized access.
+- **App & browser control**: Protects users from potentially unsafe apps, files, and websites.
+- **Device security**: Provides hardware-based protections that help secure the system.
+
+#### Windows Defender Firewll
+
+**Windows Defender Firewal**l is a built-in firewall designed to help protect your computer from unauthorized network traffic. It monitors network connections and applies rules that determine whether the connections are allowed or denied. 
+
+###### The firewall operates on different network profiles, allowing you to create custom rules or specify applications that are permitted:
+
+- **Domain**: Used when a system is connected to an organization’s domain network.
+- **Private**: Intended for trusted networks, such as a home or lab environment.
+- **Public**: Used for untrusted networks, such as public Wi-Fi.
+
 ### Key Takeaways
 
 ## Linux CLI Basics
