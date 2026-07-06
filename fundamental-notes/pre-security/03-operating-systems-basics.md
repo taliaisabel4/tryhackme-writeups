@@ -111,7 +111,7 @@ An operating system is the core software sitting between users, applications, an
 
 ## Windows Basics
 
-*This room covers ...*
+*This room covers the essentials of using and securing a Windows system, from logging in and navigating the desktop to managing applications, settings, and built-in security tools.*
 
 ### Logging In and Authentication
 
@@ -143,7 +143,7 @@ The **Windows Desktop** is the first thing that shows up once you log in.
 - **Date and Time**: Opens up to a full calendar. Date and time settings can be accessed here.
 - **Notifications**: Displays computer or application notifications. Network and other settings can also be accessed.
 
-#### Build-In Tools and Apps
+#### Built-In Tools and Apps
 
 Windows also includes simple but powerful tools such as **Notepad** for editing text files and **File Explorer** for navigating and managing files. These tools are available immediately and form the foundation of everyday Windows usage. All of them can be accessed via the Start Menu and search bar.
 
@@ -186,7 +186,7 @@ Application updates work differently depending on how the software is installed.
 
 #### Installing and Uninstalling Applications
 
-Installing applications...
+Installing applications adds new software to your system, and Windows offers more than one way to do it depending on where the software comes from.
 
 ###### There are two ways to install applications:
 
@@ -236,9 +236,9 @@ The **Windows Security** application is your central dashboard for managing Wind
 - **App & browser control**: Protects users from potentially unsafe apps, files, and websites.
 - **Device security**: Provides hardware-based protections that help secure the system.
 
-#### Windows Defender Firewll
+#### Windows Defender Firewall
 
-**Windows Defender Firewal**l is a built-in firewall designed to help protect your computer from unauthorized network traffic. It monitors network connections and applies rules that determine whether the connections are allowed or denied. 
+**Windows Defender Firewall** is a built-in firewall designed to help protect your computer from unauthorized network traffic. It monitors network connections and applies rules that determine whether the connections are allowed or denied. 
 
 ###### The firewall operates on different network profiles, allowing you to create custom rules or specify applications that are permitted:
 
@@ -247,6 +247,8 @@ The **Windows Security** application is your central dashboard for managing Wind
 - **Public**: Used for untrusted networks, such as public Wi-Fi.
 
 ### Key Takeaways
+
+Windows presents a graphical environment built around the desktop, taskbar, and Start menu, and controls access through account types ranging from restricted Guest and Standard users to fully privileged Administrators. Day-to-day management covers installing, updating, and removing applications, viewing system information, and using tools like Task Manager to monitor processes and performance, with configuration split between the modern Settings app and the legacy Control Panel. Windows also ships with built-in security: the Windows Security dashboard groups protection into virus and threat, firewall and network, app and browser, and device security, while Windows Defender Firewall filters traffic using domain, private, and public profiles.
 
 ## Linux CLI Basics
 
