@@ -1,6 +1,10 @@
 # Start Your Cyber Security Journey
 
+*This module...*
+
 [Offensive Security Introduction](#-offensive-security-introduction) [Defensive Security Introduction](#-defensive-security-introduction)
+
+Notes from the first section of TryHackMe's Cyber Security 101 learning path.
 
 ## <img src="https://github.com/user-attachments/assets/14e8c19d-29b1-40ed-aecc-1ec8b53df85b" width="50" height="50" align="middle" alt="Offensive Security Introduction room icon"> Offensive Security Introduction
 
