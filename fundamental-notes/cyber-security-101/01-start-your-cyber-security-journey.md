@@ -32,4 +32,27 @@ Defensive security is the counterpart to offensive work. Its goal is to protect 
 
 ## Search Skills
 
+*This room covers the search of the Internet and the use of specialized services and technocal docs for information.*
+
+### Shodan
+
+
+
+### VirusTotal
+
+
+
+### Vulnerability Databases
+
+
+
+### Technical Documentation
+
+
+
+### GitHub
+
+
+
+### Key Takeaways
 
