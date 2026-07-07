@@ -130,10 +130,20 @@ ASCII provided a way to encode the English alphabet. ASCII uses 7 bits, and with
 
 ### Key Takeaways
 
-
-
 ## Python: Simple Demo
 <img width="384" height="384" alt="1773400291430-Room_Image-11" src="https://github.com/user-attachments/assets/c27b1a73-9710-481d-9e60-7abb4f84785a" />
+
+#### Variables
+
+Python offers the `random.randint()` method, which returns a random integer within the specified bounds.
+
+#### Conditional Statements
+
+
+
+#### Iterations
+
+
 
 *This room covers...*
 
