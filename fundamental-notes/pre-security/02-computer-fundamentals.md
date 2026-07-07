@@ -125,7 +125,7 @@ The client-server model underpins web communication: a client such as a browser 
 
 ### Virtualization Overview
 
-Before the concept of virtualization, the rule of thumb in IT was: *“One server = one application.”*
+Before the concept of virtualization, the rule of thumb in IT was: *"One server = one application."*
 
 Virtual computers act as independent systems, each with its own operating system, applications, and settings, even though they all share the same physical hardware underneath.
 
@@ -149,11 +149,11 @@ A **Virtual Machine** (VM) is a virtual computer created by the hypervisor.
 
 > You can deploy VMs on your own computer using tools such as Oracle VirtualBox and VMware Workstation.
 
-###### Even though it’s virtual, it behaves as a real machine:
+###### Even though it's virtual, it behaves as a real machine:
 
 - It has its own virtual CPU, RAM, storage, and network.
 - It can run any operating system (Windows, Linux, etc.).
-- It’s completely isolated from other VMs.
+- It's completely isolated from other VMs.
 
 A **container** is a lightweight, isolated environment that runs a single application and all the necessary components to support it. Instead of bringing a whole separate operating system, a container borrows the core of the existing system by running on the kernel, which is the part of an operating system that communicates with the hardware and manages resources such as memory and running programs.
 
@@ -162,8 +162,8 @@ A **container** is a lightweight, isolated environment that runs a single applic
 ###### Containers behave like small, self-contained spaces because:
 
 - They package the application and its dependencies (libraries, tools, versions).
-- They share the host’s operating system, so they start almost instantly.
-- They remain isolated from each other, so a misbehaving container doesn’t affect the others.
+- They share the host's operating system, so they start almost instantly.
+- They remain isolated from each other, so a misbehaving container doesn't affect the others.
 - They can run consistently on any machine, making them perfect for development, testing, and scalable deployments.
 
 ### Key Takeaways
