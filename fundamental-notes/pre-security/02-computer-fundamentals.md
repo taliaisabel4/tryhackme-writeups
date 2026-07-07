@@ -2,12 +2,11 @@
 
 *This module builds up from a single computer's internal components to how machines communicate with each other, run virtualized systems, and scale into the cloud.*
 
-[Inside a Computer System](#inside-a-computer-system) · [Computer Types](#computer-types) · [Client-Server Basics](#client-server-basics) · [Virtualization Basics](#virtualization-basics) · [Cloud Computing Fundamentals](#cloud-computing-fundamentals)
+[Inside a Computer System](#-inside-a-computer-system) · [Computer Types](#-computer-types) · [Client-Server Basics](#-client-server-basics) · [Virtualization Basics](#-virtualization-basics) · [Cloud Computing Fundamentals](#-cloud-computing-fundamentals)
 
 > Notes from the second section of TryHackMe's **Pre Security** learning path.
 
-## Inside a Computer System
-<img width="384" height="384" alt="1773400154829-Room_Image" src="https://github.com/user-attachments/assets/d6d04e77-bb23-4336-accf-24059a0d8334" />
+## <img src="https://github.com/user-attachments/assets/d6d04e77-bb23-4336-accf-24059a0d8334" width="50" height="50" align="middle" alt="Inside a Computer System room icon"> Inside a Computer System
 
 *This room covers the basic components of a computer system and the boot process it runs through on startup.*
 
@@ -54,8 +53,7 @@ Once the core components are installed in the computer system, it is time to boo
 
 A computer system is built from core hardware components that each serve a distinct purpose: the CPU executes instructions, RAM provides fast volatile working memory, storage retains data without power, the motherboard connects everything, and the PSU supplies power. Startup follows a defined sequence: the power button engages the PSU, UEFI firmware brings the components up and runs POST to verify them, a boot device is selected, and the bootloader loads the operating system into RAM. Understanding both the parts and the boot chain is the foundation for reasoning about how a system behaves and where it can fail or be interfered with.
 
-## Computer Types
-<img width="384" height="384" alt="1773400161307-Room_Image-3" src="https://github.com/user-attachments/assets/4090bd2d-f3eb-49f6-b09a-befeb687f41c" />
+## <img src="https://github.com/user-attachments/assets/4090bd2d-f3eb-49f6-b09a-befeb687f41c" width="50" height="50" align="middle" alt="Computer Types room icon"> Computer Types
 
 *This room covers the different types of computers and the purposes they serve.*
 
@@ -85,8 +83,7 @@ All computer types serve different purposes such as portable everyday computing 
 
 Computers come in many forms, each shaped by its purpose: portable laptops, fixed desktops and workstations for sustained or precise work, and servers that provide services to many users over a network. Computing also extends into everyday objects, from smartphones and tablets to IoT and embedded devices built for narrow, dedicated tasks. The key distinction among those smaller devices is connectivity: IoT devices communicate over a network, whereas embedded computers may operate entirely inside the device they control.
 
-## Client-Server Basics
-<img width="384" height="384" alt="1773400170483-Room_Image-1" src="https://github.com/user-attachments/assets/e910d8f9-d08a-4cea-8069-a8b9da79f119" />
+## <img src="https://github.com/user-attachments/assets/e910d8f9-d08a-4cea-8069-a8b9da79f119" width="50" height="50" align="middle" alt="Client-Server Basics room icon"> Client-Server Basics
 
 *This room covers the basics of the client-server model.*
 
@@ -122,8 +119,7 @@ This request retrieves the TryHackMe website's homepage. When you open a browser
 
 The client-server model underpins web communication: a client such as a browser sends requests, and a server responds with the requested resource. HTTP is the protocol governing this exchange, and it is stateless, meaning each request is handled on its own without the server remembering previous ones. Requests use defined methods such as `GET`, which retrieves a resource, and each response carries a status code indicating the outcome along with any requested data.
 
-## Virtualization Basics
-<img width="384" height="384" alt="1773400177898-Room_Image-2" src="https://github.com/user-attachments/assets/aa020d09-3bdd-45de-992e-0767ca74a35d" />
+## <img src="https://github.com/user-attachments/assets/aa020d09-3bdd-45de-992e-0767ca74a35d" width="50" height="50" align="middle" alt="Virtualization Basics room icon"> Virtualization Basics
 
 *This room covers the basics of virtualization, including hypervisors, virtual machines, and containers.*
 
@@ -174,8 +170,7 @@ A **container** is a lightweight, isolated environment that runs a single applic
 
 Virtualization lets a single physical machine run multiple isolated systems, each with its own operating system and share of the hardware, managed by a hypervisor that runs either directly on the hardware (Type 1) or on top of an existing operating system (Type 2). Containers take a lighter approach, packaging a single application with its dependencies and sharing the host's kernel, which makes them start faster and use fewer resources than full virtual machines.
 
-## Cloud Computing Fundamentals
-<img width="384" height="384" alt="1773400183488-Room_Image-4" src="https://github.com/user-attachments/assets/2d8962f4-73d4-41ee-b85f-d92a3f5e6e7a" />
+## <img src="https://github.com/user-attachments/assets/2d8962f4-73d4-41ee-b85f-d92a3f5e6e7a" width="50" height="50" align="middle" alt="Cloud Computing Fundamentals room icon"> Cloud Computing Fundamentals
 
 *This room covers the fundamentals of cloud computing, including its benefits, deployment types, and service models.*
 
