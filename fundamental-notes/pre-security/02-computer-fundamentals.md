@@ -74,10 +74,10 @@ All computer types serve different purposes such as portable everyday computing 
 | --- | --- | --- |
 | Smartphone | Pocket-sized computer optimized for battery life and connectivity. | iPhone, Android phone |
 | Tablet | Touch-first computer with a larger screen. | iPad, drawing tablet |
-| IoT device | Network-connected device with a single purpose. | Thermostat, smart doorbell |
+| IoT device | Network-connected device with a single purpose. | Thermostat, smart doorbell |
 | Embedded computer | Computer built into another device. | Coffee maker controller, automatic door sensor |
 
-> The difference between IoT devices and embedded computers is that IoT devices connect to a network to report data or receive commands, while embedded computers might not connect to anything and simply do their job inside the machine.
+> The difference between IoT devices and embedded computers is that IoT devices connect to a network to report data or receive commands, while embedded computers might not connect to anything and simply do their job inside the machine.
 
 ### Key Takeaways
 
