@@ -127,7 +127,7 @@ The client-server model underpins web communication: a client such as a browser 
 
 Before the concept of virtualization, the rule of thumb in IT was: *"One server = one application."*
 
-Virtual computers act as independent systems, each with its own operating system, applications, and settings, even though they all share the same physical hardware underneath.
+> Virtual computers act as independent systems, each with its own operating system, applications, and settings, even though they all share the same physical hardware underneath.
 
 ### Virtualization Components
 
