@@ -7,6 +7,7 @@
 > Notes from the third section of TryHackMe's **Pre Security** learning path.
 
 ## Operating Systems: Introduction
+<img width="384" height="384" alt="1773400208698-Room_Image-5" src="https://github.com/user-attachments/assets/1994f6bd-b74e-4368-b8c2-ca2e1dc7df1b" />
 
 *This room covers what an operating system is, the core duties it performs, and the different types of OS in use today.*
 
@@ -110,6 +111,7 @@ In the real world, there are many operating systems in use,
 An operating system is the core software sitting between users, applications, and hardware, coordinating the whole machine while enforcing a strict separation between privileged kernel space and restricted user space. Its core duties span process, memory, file system, user, and device management, alongside security functions such as authentication, permissions, and process isolation. Operating systems come in many forms, from desktop and server to mobile, embedded, and cloud, and are interacted with through either a graphical (GUI) or command-line (CLI) interface.
 
 ## Windows Basics
+<img width="384" height="384" alt="1773400216298-Room_Image-8" src="https://github.com/user-attachments/assets/cf58b202-37c8-48c9-b769-2c565154a728" />
 
 *This room covers the essentials of using and securing a Windows system, from logging in and navigating the desktop to managing applications, settings, and built-in security tools.*
 
@@ -251,6 +253,7 @@ The **Windows Security** application is your central dashboard for managing Wind
 Windows presents a graphical environment built around the desktop, taskbar, and Start menu, and controls access through account types ranging from restricted Guest and Standard users to fully privileged Administrators. Day-to-day management covers installing, updating, and removing applications, viewing system information, and using tools like Task Manager to monitor processes and performance, with configuration split between the modern Settings app and the legacy Control Panel. Windows also ships with built-in security: the Windows Security dashboard groups protection into virus and threat, firewall and network, app and browser, and device security, while Windows Defender Firewall filters traffic using domain, private, and public profiles.
 
 ## Linux CLI Basics
+<img width="96" height="96" alt="1773400244147-linuxfundamentalspart1" src="https://github.com/user-attachments/assets/3f62891f-39cc-4332-97f0-b4964598175e" />
 
 *This room covers ...*
 
@@ -271,6 +274,7 @@ These are the Linux core navigation commands that every Linux users use.
 ### Key Takeaways
 
 ## Windows CLI Basics
+<img width="384" height="384" alt="1773400260703-Room_Image-7" src="https://github.com/user-attachments/assets/15bf4007-3c6b-4e38-8966-b203f5d91e22" />
 
 *This room covers ...*
 
@@ -291,6 +295,7 @@ These are the Windows core navigation commands that every Window users use.
 ### Key Takeaways
 
 ## Operating System Security
+<img width="384" height="384" alt="1773400267726-Room_Image-9" src="https://github.com/user-attachments/assets/6078d213-9a51-4cea-94b3-186270a66e13" />
 
 *This room covers the fundamentals of operating system security, including the CIA triad, authentication, file permissions, and malicious programs.*
 
