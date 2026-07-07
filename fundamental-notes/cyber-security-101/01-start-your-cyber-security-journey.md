@@ -2,9 +2,9 @@
 
 *This module...*
 
-[Offensive Security Introduction](#-offensive-security-introduction) [Defensive Security Introduction](#-defensive-security-introduction)
+[Offensive Security Introduction](#-offensive-security-introduction) · [Defensive Security Introduction](#-defensive-security-introduction) · [Search Skills](#-search-skills)
 
-Notes from the first section of TryHackMe's Cyber Security 101 learning path.
+> Notes from the first section of TryHackMe's Cyber Security 101 learning path.
 
 ## <img src="https://github.com/user-attachments/assets/14e8c19d-29b1-40ed-aecc-1ec8b53df85b" width="50" height="50" align="middle" alt="Offensive Security Introduction room icon"> Offensive Security Introduction
 
@@ -29,3 +29,7 @@ Offensive security is about adopting an attacker's mindset to find weaknesses be
 ### Key Takeaways
 
 Defensive security is the counterpart to offensive work. Its goal is to protect systems and to detect and respond to threats as they arise. It combines prevention, stopping intrusions before they succeed, with detection and response, identifying activity that slips through and acting on it. Blue teams operate in this space, monitoring environments and reacting to incidents to limit the damage an attacker can do.
+
+## Search Skills
+
+
