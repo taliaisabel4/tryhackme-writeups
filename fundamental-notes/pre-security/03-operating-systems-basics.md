@@ -252,11 +252,11 @@ Windows presents a graphical environment built around the desktop, taskbar, and 
 
 ## <img src="https://github.com/user-attachments/assets/3f62891f-39cc-4332-97f0-b4964598175e" width="50" height="50" align="middle" alt="Linux CLI Basics room icon"> Linux CLI Basics
 
-*This room covers ...*
+*This room covers core Linux command-line navigation, using commands to move through the filesystem and inspect files and system information.*
 
 ### Interacting with the Terminal using Linux Commands
 
-These are the Linux core navigation commands that every Linux users use.
+These are the Linux core navigation commands that every Linux user should know.
 
 ###### Core navigation commands:
 
@@ -270,13 +270,15 @@ These are the Linux core navigation commands that every Linux users use.
 
 ### Key Takeaways
 
+The Linux command line provides a set of core commands for navigating and inspecting a system without a graphical interface. Commands like `pwd`, `ls`, and `cd` handle movement and orientation within the filesystem, while `find` and `cat` locate files and read their contents. Others such as `whoami` and `uname` report on the current user and the underlying operating system, giving a quick picture of the environment you are working in.
+
 ## <img src="https://github.com/user-attachments/assets/15bf4007-3c6b-4e38-8966-b203f5d91e22" width="50" height="50" align="middle" alt="Windows CLI Basics room icon"> Windows CLI Basics
 
-*This room covers ...*
+*This room covers core Windows command-line navigation, using commands to move through the filesystem and inspect files, the system, and its network configuration.*
 
 ### Interacting with the Terminal using Windows Commands
 
-These are the Windows core navigation commands that every Window users use.
+These are the Windows core navigation commands that every Windows user should know.
 
 ###### Core navigation commands:
 
@@ -289,6 +291,8 @@ These are the Windows core navigation commands that every Window users use.
 - **`ipconfig`**: Display the network configuration of the machine, including IP address, subnet mask, and default gateway.
 
 ### Key Takeaways
+
+The Windows command line offers a set of core commands for navigating and inspecting a system from a terminal. Commands like `cd`, `dir`, and `type` handle moving through the filesystem and reading files, while `whoami` and `hostname` identify the current user and machine. Others such as `systeminfo` and `ipconfig` report detailed configuration and network information, making the command line a fast way to understand a system's state.
 
 ## <img src="https://github.com/user-attachments/assets/6078d213-9a51-4cea-94b3-186270a66e13" width="50" height="50" align="middle" alt="Operating System Security room icon"> Operating System Security
 
