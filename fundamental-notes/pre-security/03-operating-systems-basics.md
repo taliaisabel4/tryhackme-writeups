@@ -260,13 +260,13 @@ These are the Linux core navigation commands that every Linux users use.
 
 ###### Core navigation commands:
 
-- **`pwd`**: 
-- **`ls`**:
-- **`cd`**:
-- **`find`**:
-- **`cat`**:
-- **`whoami`**
-- **`uname`**
+- **`pwd`**: Print working directory; displays the full path of the directory you are currently in.
+- **`ls`**: List the contents (files and directories) of the current directory, or of a specified path.
+- **`cd`**: Change directory; moves you from your current location to another directory.
+- **`find`**: Search for files and directories within a directory hierarchy, based on criteria such as name, type, or size.
+- **`cat`**: Concatenate and display the contents of a file to the terminal.
+- **`whoami`**: Print the username of the currently logged-in user.
+- **`uname`**: Display system information about the operating system and kernel.
 
 ### Key Takeaways
 
@@ -280,13 +280,13 @@ These are the Windows core navigation commands that every Window users use.
 
 ###### Core navigation commands:
 
-- **`cd`**: 
-- **`dir`**:
-- **`type`**:
-- **`whoami`**:
-- **`hostname`**:
-- **`systeminfo`**
-- **`ipconfig`**
+- **`cd`**: Change directory; moves you from your current location to another directory.
+- **`dir`**: Display the contents (files and directories) of the current directory, or of a specified path.
+- **`type`**: Display the contents of a text file in the terminal.
+- **`whoami`**: Print the username of the currently logged-in user.
+- **`hostname`**: Display the name of the current host (computer) on the network.
+- **`systeminfo`**: Display detailed configuration information about the computer and its operating system, including OS version, hardware, and network details.
+- **`ipconfig`**: Display the network configuration of the machine, including IP address, subnet mask, and default gateway.
 
 ### Key Takeaways
 
