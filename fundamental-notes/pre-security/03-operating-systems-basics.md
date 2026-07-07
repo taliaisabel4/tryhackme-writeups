@@ -30,11 +30,11 @@ Every OS is responsible for a few core duties that allow your computer to run sa
 
 ###### OS responsibilities and what it does:
 
-| **OS Responsibility** | **What the OS Does** | **Example** |
+| **OS Responsibility** | **What the OS Does** | **Example** |
 | --- | --- | --- |
-| Process Management | Creates, schedules, prioritizes, and terminates running programs. The OS decides how much CPU time each process gets, making multitasking feel seamless. | Opening multiple apps, like your browser, music player, and social media, without your computer freezing. |
-| Memory Management | Allocates RAM to processes, protects the app's memory from other processes, and reclaims memory when apps are closed. When RAM runs low, the OS uses virtual memory to keep your system stable. | Opening multiple apps at once, the OS allocates RAM to each one and keeps them isolated so they don't interfere or crash each other. |
-| File System Management | Organizes files into directories, handles naming, paths, permissions, metadata (name, size, type, timestamps). | Creating a new folder, saving a photo, or setting a file to "read only". |
+| Process Management | Creates, schedules, prioritizes, and terminates running programs. The OS decides how much CPU time each process gets, making multitasking feel seamless. | Opening multiple apps, like your browser, music player, and social media, without your computer freezing. |
+| Memory Management | Allocates RAM to processes, protects the app's memory from other processes, and reclaims memory when apps are closed. When RAM runs low, the OS uses virtual memory to keep your system stable. | Opening multiple apps at once, the OS allocates RAM to each one and keeps them isolated so they don't interfere or crash each other. |
+| File System Management | Organizes files into directories, handles naming, paths, permissions, metadata (name, size, type, timestamps). | Creating a new folder, saving a photo, or setting a file to "read only". |
 | User Management | Handles multiple user accounts, authentication, and permissions to determine who can access what. | Logging in with your password and keeping your files inaccessible to other user accounts. |
 | Device Management | Loads drivers and provides a universal interface (hardware abstraction layer), so apps can say "print this" or "play this sound". | Plugging in a new mouse, printer, or external hard drive and having it work immediately. |
 
@@ -145,13 +145,13 @@ The **Windows Desktop** is the first thing that shows up once you log in.
 
 #### Built-In Tools and Apps
 
-Windows also includes simple but powerful tools such as **Notepad** for editing text files and **File Explorer** for navigating and managing files. These tools are available immediately and form the foundation of everyday Windows usage. All of them can be accessed via the Start Menu and search bar.
+Windows also includes simple but powerful tools such as **Notepad** for editing text files and **File Explorer** for navigating and managing files. These tools are available immediately and form the foundation of everyday Windows usage. All of them can be accessed via the Start Menu and search bar.
 
 #### Getting System Information
 
-Windows includes a built-in Settings application that allows you to configure and view information about your system.
+Windows includes a built-in Settings application that allows you to configure and view information about your system.
 
-> Within the Settings app, there's a helpful section called **About your PC**, that provides an overview of security, device, and operating system information.
+> Within the Settings app, there's a helpful section called **About your PC**, that provides an overview of security, device, and operating system information.
 
 #### File Exploration and Management
 
@@ -219,7 +219,7 @@ There are two primary ways in which a Windows user can modify their environment.
 
 - **Processes**: Currently running apps and background processes, and their resource usage.
 - **Performance**: Graphs and statistics for system resources such as CPU, memory, and network.
-- **Users**: Currently logged-in users and used resources .
+- **Users**: Currently logged-in users and used resources.
 - **Details**: A more technical view of running processes, including process IDs (PIDs).
 - **Services**: Windows services and their current status (running or stopped).
 
@@ -242,7 +242,7 @@ The **Windows Security** application is your central dashboard for managing Wind
 
 ###### The firewall operates on different network profiles, allowing you to create custom rules or specify applications that are permitted:
 
-- **Domain**: Used when a system is connected to an organization’s domain network.
+- **Domain**: Used when a system is connected to an organization's domain network.
 - **Private**: Intended for trusted networks, such as a home or lab environment.
 - **Public**: Used for untrusted networks, such as public Wi-Fi.
 
@@ -312,7 +312,7 @@ The **Operating System** (OS) is the layer sitting between the hardware and the 
 
 #### Authentication and Weak Passwords
 
-Authentication is the act of verifying your identity, be it a local or a remote system
+Authentication is the act of verifying your identity, whether on a local or a remote system.
 
 ###### Authentication can be achieved via three main ways:
 
