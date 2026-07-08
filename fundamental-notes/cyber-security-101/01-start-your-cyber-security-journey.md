@@ -31,28 +31,53 @@ Offensive security is about adopting an attacker's mindset to find weaknesses be
 Defensive security is the counterpart to offensive work. Its goal is to protect systems and to detect and respond to threats as they arise. It combines prevention, stopping intrusions before they succeed, with detection and response, identifying activity that slips through and acting on it. Blue teams operate in this space, monitoring environments and reacting to incidents to limit the damage an attacker can do.
 
 ## Search Skills
+<img width="95" height="86" alt="5de96d9ca744773ea7ef8c00-1773877192929" src="https://github.com/user-attachments/assets/27cff360-2059-4ebd-8e2c-dedd8f401dea" />
 
 *This room covers the search of the Internet and the use of specialized services and technocal docs for information.*
 
 ### Shodan
 
-
+**Shonan** is a search engine for internet-connected devices. Rather than indexing web pages, it scans and catalogs devices exposed to the internet such as servers, webcams, routers, and industrial control systems, alongside with the services and ports they have open. Security professionals use it for reconnaissance and to discover exposed or vulnerable systems.
 
 ### VirusTotal
 
-
+**VirusTotal** is an online service that analyzes files, URLs, domains, and IP addresses for malicious content by running them against dozens of antivirus engines and threat-intelligence feeds at once. It's a staple for quickly checking whether something is known to be malicious, making it a common first stop in triage and investigation.
 
 ### Vulnerability Databases
 
+**Common Vulnerabilities and Exposures** (CVE) is a publicly available, standardized list of known security vulnerabilities, each assigned a unique identifier in the format: CVE-YEAR-NUMBER.
 
+> If the vulnerability is impactful enough, it may even get a moniker.
+
+###### These vulnerabilities are given a score (CVSS) based on a variety of factors, such as:
+
+- **Impact**: What damage can this vulnerability lead to?
+- **Complexity**: Is the vulnerability easy to exploit or not? 
+- **Availability**: How likely is it that someone can exploit this?
+
+> Organizations use scoring like this to prioritise their level of risk, addressing the highest scoring first.
+
+These identifiers function as a reference point among vendors, researchers, security tools, and documentation, ensuring that everyone discussing a vulnerability refers to the same issue. 
 
 ### Technical Documentation
 
+Each major security tool or platform provides its own documentation, which is the most reliable and up-to-date than any third-party tutorials.
 
+> When you're troubleshooting unexpected behaviour or trying to understand how to use a tool in a certain way, the official documentation should always be your first stop.
+
+#### Linux Man Pages
+
+The Linux manual pages serve as documentation that you can read within your terminal about any command on Linux, and a majority of cybersecurity tooling.
+
+To view the manual page, run: `man <command>`
 
 ### GitHub
 
+**GitHub** is a great resource for staying updated on the latest threats and vulnerabilities. Researchers often publish proof-of-concept (PoC) code, exploitation tools, and detailed technical reports there, which are usually faster than official channels. 
 
+Searching for a CVE identifier directly on GitHub often reveals repositories containing PoC code, scanner scripts, or detailed analyzes of the vulnerability.
+
+> Not all PoCs are equally reliable. Some are incomplete, some are intentionally flawed, and occasionally a "PoC" repository is malicious itself. Always verify what you're about to execute.
 
 ### Key Takeaways
 
