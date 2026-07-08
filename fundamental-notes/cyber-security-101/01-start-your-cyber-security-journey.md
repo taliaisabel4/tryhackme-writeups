@@ -1,6 +1,6 @@
 # Start Your Cyber Security Journey
 
-*This module revisits the offensive and defensive sides of security, then turns to the search skills and specialized resources used to research threats, tools, and vulnerabilities.*
+*This module covers the offensive and defensive approaches to security, then the search skills and specialized resources used to research threats, tools, and vulnerabilities.*
 
 [Offensive Security Introduction](#-offensive-security-introduction) · [Defensive Security Introduction](#-defensive-security-introduction) · [Search Skills](#-search-skills)
 
