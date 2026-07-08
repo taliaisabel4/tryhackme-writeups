@@ -1,6 +1,6 @@
 # Start Your Cyber Security Journey
 
-*This module...*
+*This module revisits the offensive and defensive sides of security, then turns to the search skills and specialized resources used to research threats, tools, and vulnerabilities.*
 
 [Offensive Security Introduction](#-offensive-security-introduction) · [Defensive Security Introduction](#-defensive-security-introduction) · [Search Skills](#-search-skills)
 
@@ -51,8 +51,8 @@ Defensive security is the counterpart to offensive work. Its goal is to protect 
 ###### These vulnerabilities are given a score (CVSS) based on a variety of factors, such as:
 
 - **Impact**: What damage can this vulnerability lead to?
-- **Complexity**: Is the vulnerability easy to exploit or not? 
-- **Availability**: How likely is it that someone can exploit this?
+- **Complexity**: Is the vulnerability easy to exploit or not?
+- **Availability**: Are working exploits already publicly available, making exploitation more likely?
 
 > Organizations use scoring like this to prioritize their level of risk, addressing the highest scoring first.
 
