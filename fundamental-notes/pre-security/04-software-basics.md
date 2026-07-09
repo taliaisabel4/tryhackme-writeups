@@ -142,18 +142,18 @@ ASCII provided a way to encode the English alphabet. ASCII uses 7 bits, and with
 **Variables** store values the program tracks: `secret` (the number to guess), `tries` (attempt counter), and `guess` (the user's input). The `random.randint(1, 20)` method returns a random integer within the given bounds. `tries` and `guess` both start at `0` — `guess` starts at 0 deliberately because a valid secret is 1–20, so it can never accidentally match. `print()` displays messages, `input()` captures text from the user, and `int()` converts that text into a number so it can be compared. Each guess increments the counter with `tries = tries + 1` (saved as `guess_v1.py`).
 
 ```python
-import random  # gives us tools for picking random numbers
+import random  # Gives us tools for picking random numbers
 
 secret = random.randint(1, 20)  # a <= secret <= b
 tries = 0
-guess = 0  # start with a value that cannot be the secret (since secret is 1..20)
+guess = 0  # Start with a value that cannot be the secret (since secret is 1..20)
 
 print("I'm thinking of a number between 1 and 20")
 
 text = input("Take a guess: ")  # input() returns text (a string)
-guess = int(text)  # convert the text to a number
+guess = int(text)  # Convert the text to a number
 
-tries = tries + 1  # add 1 try
+tries = tries + 1  # Add 1 try
 ```
 
 ### Conditional Statements
@@ -177,7 +177,7 @@ else:
 **Iterations** (loops) repeat a block of code as long as a condition holds, giving the user unlimited guesses. The game uses a `while` loop written as `while guess != secret:`, where `!=` means "does not equal." Python checks the condition before each pass: if true it runs the indented block; if false the loop ends. Because `guess` starts at 0, the loop always runs at least once and stops only when the guess equals the secret (e.g., `10 != 10` is false, so it terminates). Below is the complete final game (saved as `guess_v3.py`).
 
 ```python
-import random  # gives us tools for picking random numbers
+import random  # Gives us tools for picking random numbers
 
 # ----------------------------
 # Guess the Number (Beginner Demo)
@@ -187,16 +187,16 @@ import random  # gives us tools for picking random numbers
 
 secret = random.randint(1, 20)  # a <= secret <= b
 tries = 0
-guess = 0  # start with a value that cannot be the secret (since secret is 1..20)
+guess = 0  # Start with a value that cannot be the secret (since secret is 1..20)
 
 print("I'm thinking of a number between 1 and 20")
 
 # Repeat until the user guesses the secret number.
 while guess != secret:
     text = input("Take a guess: ")  # input() returns text (a string)
-    guess = int(text)  # convert the text to a number
+    guess = int(text)  # Convert the text to a number
 
-    tries = tries + 1  # add 1 try
+    tries = tries + 1  # Add 1 try
 
     # Give a hint using if / elif / else.
     if guess < 1 or guess > 20:
