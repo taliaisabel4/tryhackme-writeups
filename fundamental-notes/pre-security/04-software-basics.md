@@ -133,8 +133,6 @@ ASCII provided a way to encode the English alphabet. ASCII uses 7 bits, and with
 ## Python: Simple Demo
 <img width="384" height="384" alt="1773400291430-Room_Image-11" src="https://github.com/user-attachments/assets/c27b1a73-9710-481d-9e60-7abb4f84785a" />
 
-## Python: Simple Demo
-
 *This room covers...*
 
 ### Variables
@@ -215,6 +213,162 @@ while guess != secret:
 <img width="384" height="384" alt="1773400296115-Room_Image-12" src="https://github.com/user-attachments/assets/8241e0d5-1823-4642-a083-ec34ece97733" />
 
 *This room covers...*
+
+### Variables
+
+This section introduces how JavaScript stores data. You use `let` to declare a variable, which holds a value that can change during the program, and `const` to declare a constant, whose value cannot change once set. In the game, `tries` and `guess` are variables because they update as the user plays, while `secret` is a
+constant. The secret number is generated randomly by combining `Math.random()`, which returns a decimal between 0 (inclusive) and 1 (exclusive), with `* 20` to stretch that range, `Math.floor()` to round it down to a whole number, and `+ 1` to shift the result into the 1–20 range. Output is shown to the user with `console.log()`.
+
+```javascript
+let tries = 0;
+let guess = 0; // initialized to a value that can't be the secret (1..20)
+
+// secret is constant and gets a new random value each run (1 <= secret <= 20)
+const secret = Math.floor(Math.random() * (20)) + 1;
+
+console.log("I'm thinking of a number between 1 and 20");
+```
+
+### Prompting the User for Input
+
+Here the program asks the player to make a guess and captures what they type. The line `rl.question()` waits for the user to enter a value and returns it as a string, which is stored in `text`. Because that input arrives as text rather than a number, it's passed through `parseInt(text, 10)`, which converts the string into an integer using base 10, and the result is saved in `guess`. This first draft (`guess_v1.js`) sets up the variables, picks the secret, prompts once, and counts the attempt, but it doesn't yet give the user any feedback about their guess.
+
+```javascript
+const text = await rl.question("Take a guess: ");
+guess = parseInt(text, 10);
+```
+
+```javascript
+import * as readline from "node:readline/promises";
+import { stdin as input, stdout as output } from "node:process";
+
+const rl = readline.createInterface({ input, output });
+
+try {
+  const secret = Math.floor(Math.random() * (20)) + 1; // 1 <= secret <= 20
+  let tries = 0;
+  let guess = 0; // start with a value that cannot be the secret (since secret is 1..20)
+
+  console.log("I'm thinking of a number between 1 and 20");
+
+  const text = await rl.question("Take a guess: "); // returns text (a string)
+  guess = parseInt(text, 10); // convert the text to a number
+
+  tries = tries + 1; // add 1 try
+} finally {
+  rl.close();
+}
+```
+
+### Conditional Statements
+
+This section makes the game responsive by evaluating the guess and giving feedback. Using an `if` / `else if` / `else` chain, the program first checks whether the guess is out of range (less than 1 or greater than 20, where `||` means "or"), then whether it is lower than the secret, then whether it is higher, and finally, if none of those are true, it concludes the guess must be correct.
+Because the conditions are mutually exclusive, chaining them with `else` avoids checking later conditions once an earlier one is satisfied. This draft
+(`guess_v2.js`) now tells the user whether they are out of range, too low, too high, or correct, but it still only runs once and gives them a single chance.
+
+```javascript
+// Give a hint using if / else if / else.
+if (guess < 1 || guess > 20) {
+  console.log("That number is out of range. Try again.");
+} else if (guess < secret) {
+  console.log("Too low, try again.");
+} else if (guess > secret) {
+  console.log("Too high, try again.");
+} else {
+  console.log("You got it in", tries, "tries!");
+}
+```
+
+```javascript
+import * as readline from "node:readline/promises";
+import { stdin as input, stdout as output } from "node:process";
+
+const rl = readline.createInterface({ input, output });
+
+try {
+  const secret = Math.floor(Math.random() * (20)) + 1; // 1 <= secret <= 20
+  let tries = 0;
+  let guess = 0;
+
+  console.log("I'm thinking of a number between 1 and 20");
+
+  const text = await rl.question("Take a guess: ");
+  guess = parseInt(text, 10);
+
+  tries = tries + 1;
+
+  if (guess < 1 || guess > 20) {
+    console.log("That number is out of range. Try again.");
+  } else if (guess < secret) {
+    console.log("Too low, try again.");
+  } else if (guess > secret) {
+    console.log("Too high, try again.");
+  } else {
+    console.log("You got it in", tries, "tries!");
+  }
+} finally {
+  rl.close();
+}
+```
+
+### Iterations
+
+The final section makes the game repeatable so the user can keep guessing until they succeed. This is done with a `while` loop, which repeats its body as long as its condition remains true. The condition `while (guess !== secret)` keeps prompting for new guesses while the guess is not equal to the secret, where `!==` means "not equal." Everything from the earlier tasks—prompting for input, converting it to a number, incrementing `tries`, and running the conditional feedback—now lives inside the loop, so the program continues until the correct number is entered. This complete version (`guess_v3.js`) picks a new secret each time it runs. An optional `guess_v4.js` on the VM refines it further but isn't essential for this introductory room.
+
+```javascript
+// Repeat until the user guesses the secret number.
+while (guess !== secret) {
+  const text = await rl.question("Take a guess: ");
+  guess = parseInt(text, 10);
+
+tries = tries + 1;
+
+  if (guess < 1 || guess > 20) {
+    console.log("That number is out of range. Try again.");
+  } else if (guess < secret) {
+    console.log("Too low, try again.");
+  } else if (guess > secret) {
+    console.log("Too high, try again.");
+  } else {
+    console.log("You got it in", tries, "tries!");
+  }
+}
+```
+
+```javascript
+import * as readline from "node:readline/promises";
+import { stdin as input, stdout as output } from "node:process";
+
+const rl = readline.createInterface({ input, output });
+
+try {
+  const secret = Math.floor(Math.random() * (20)) + 1; // 1 <= secret <= 20
+  let tries = 0;
+  let guess = 0;
+
+  console.log("I'm thinking of a number between 1 and 20");
+
+  // Repeat until the user guesses the secret number.
+  while (guess !== secret) {
+    const text = await rl.question("Take a guess: ");
+    guess = parseInt(text, 10);
+
+    tries = tries + 1;
+
+    if (guess < 1 || guess > 20) {
+      console.log("That number is out of range. Try again.");
+    } else if (guess < secret) {
+      console.log("Too low, try again.");
+    } else if (guess > secret) {
+      console.log("Too high, try again.");
+    } else {
+      console.log("You got it in", tries, "tries!");
+    }
+  }
+} finally {
+  rl.close();
+}
+```
 
 ## Database SQL Basics
 <img width="384" height="384" alt="1773400301430-Room_Image-14" src="https://github.com/user-attachments/assets/d3676ecc-be94-4622-94b5-cbd42e45263d" />
