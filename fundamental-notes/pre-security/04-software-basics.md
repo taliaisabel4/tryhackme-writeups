@@ -1,13 +1,13 @@
 # Software Basics
 
-*This module...*
+*This module explores how software represents and encodes data, and introduces the basics of programming and databases through Python, JavaScript, and SQL.*
 
 [Data Representation](#data-representation) · [Data Encoding](#data-encoding) · [Python: Simple Demo](#python-simple-demo) · [JavaScript: Simple Demo](#javascript-simple-demo) · [Database SQL Basics](#database-sql-basics)
 
 ## Data Representation
 <img width="384" height="384" alt="1773400279781-Room_Image-10" src="https://github.com/user-attachments/assets/5a583db9-a169-4b89-b4f6-412866bea4fe" />
 
-*This room covers...*
+*This room covers how computers represent data using bits and bytes, from colors and binary to hexadecimal and number conversions.*
 
 ### Representing Colors
 
@@ -91,7 +91,7 @@ The binary (base-2) system can be expressed using the decimal (base-10) system.
 ## Data Encoding
 <img width="384" height="384" alt="1773400285735-Room_Image-13" src="https://github.com/user-attachments/assets/67677f33-ae44-462a-b78c-96769626bc7d" />
 
-*This room covers...*
+*This room covers how text is encoded into numbers, from ASCII and the ISO/IEC 8859 standards to Unicode and the UTF encodings.*
 
 ### ASCII
 
@@ -133,7 +133,7 @@ ASCII provided a way to encode the English alphabet. ASCII uses 7 bits, and with
 ## Python: Simple Demo
 <img width="384" height="384" alt="1773400291430-Room_Image-11" src="https://github.com/user-attachments/assets/c27b1a73-9710-481d-9e60-7abb4f84785a" />
 
-*This room covers...*
+*This room covers Python fundamentals such as variables, conditional statements, and iteration, by building a simple number-guessing game.*
 
 ### Variables
 
@@ -212,7 +212,7 @@ while guess != secret:
 ## JavaScript: Simple Demo
 <img width="384" height="384" alt="1773400296115-Room_Image-12" src="https://github.com/user-attachments/assets/8241e0d5-1823-4642-a083-ec34ece97733" />
 
-*This room covers...*
+*This room covers JavaScript fundamentals such as variables, user input, conditional statements, and iteration, by building the same number-guessing game in JavaScript.*
 
 ### Variables
 
@@ -373,7 +373,7 @@ try {
 ## Database SQL Basics
 <img width="384" height="384" alt="1773400301430-Room_Image-14" src="https://github.com/user-attachments/assets/d3676ecc-be94-4622-94b5-cbd42e45263d" />
 
-*This room covers...*
+*This room covers the basics of databases and SQL, including tables, rows, and columns, and how to query data with SELECT, FROM, WHERE, and ORDER BY.*
 
 ### Understanding Tables, Rows, and Columns
 
