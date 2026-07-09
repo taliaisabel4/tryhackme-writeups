@@ -133,19 +133,83 @@ ASCII provided a way to encode the English alphabet. ASCII uses 7 bits, and with
 ## Python: Simple Demo
 <img width="384" height="384" alt="1773400291430-Room_Image-11" src="https://github.com/user-attachments/assets/c27b1a73-9710-481d-9e60-7abb4f84785a" />
 
-#### Variables
-
-Python offers the `random.randint()` method, which returns a random integer within the specified bounds.
-
-#### Conditional Statements
-
-
-
-#### Iterations
-
-
+## Python: Simple Demo
 
 *This room covers...*
+
+### Variables
+
+**Variables** store values the program tracks: `secret` (the number to guess), `tries` (attempt counter), and `guess` (the user's input). The `random.randint(1, 20)` method returns a random integer within the given bounds. `tries` and `guess` both start at `0` — `guess` starts at 0 deliberately because a valid secret is 1–20, so it can never accidentally match. `print()` displays messages, `input()` captures text from the user, and `int()` converts that text into a number so it can be compared. Each guess increments the counter with `tries = tries + 1` (saved as `guess_v1.py`).
+
+```python
+import random  # gives us tools for picking random numbers
+
+secret = random.randint(1, 20)  # a <= secret <= b
+tries = 0
+guess = 0  # start with a value that cannot be the secret (since secret is 1..20)
+
+print("I'm thinking of a number between 1 and 20")
+
+text = input("Take a guess: ")  # input() returns text (a string)
+guess = int(text)  # convert the text to a number
+
+tries = tries + 1  # add 1 try
+```
+
+### Conditional Statements
+
+**Conditional statements** compare the guess to the secret using `if` / `elif` / `else`. Python checks `if` first; if false it tries each `elif` (Python's "else if"); if none are true it runs the final `else`. The four cases are out of range, too low, too high, or correct, using comparison operators (`<`, `>`) and the logical operator `or`. For example, with a secret of 10 and an input of 50, the first condition is true and it prints the "out of range" message (saved as `guess_v2.py`).
+
+```python
+# Give a hint using if / elif / else.
+if guess < 1 or guess > 20:
+    print("That number is out of range. Try again.")
+elif guess < secret:
+    print("Too low, try again.")
+elif guess > secret:
+    print("Too high, try again.")
+else:
+    print("You got it in", tries, "tries!")
+```
+
+### Iterations
+
+**Iterations** (loops) repeat a block of code as long as a condition holds, giving the user unlimited guesses. The game uses a `while` loop written as `while guess != secret:`, where `!=` means "does not equal." Python checks the condition before each pass: if true it runs the indented block; if false the loop ends. Because `guess` starts at 0, the loop always runs at least once and stops only when the guess equals the secret (e.g., `10 != 10` is false, so it terminates). Below is the complete final game (saved as `guess_v3.py`).
+
+```python
+import random  # gives us tools for picking random numbers
+
+# ----------------------------
+# Guess the Number (Beginner Demo)
+# ----------------------------
+# The computer picks a secret number.
+# The player keeps guessing until they find it.
+
+secret = random.randint(1, 20)  # a <= secret <= b
+tries = 0
+guess = 0  # start with a value that cannot be the secret (since secret is 1..20)
+
+print("I'm thinking of a number between 1 and 20")
+
+# Repeat until the user guesses the secret number.
+while guess != secret:
+    text = input("Take a guess: ")  # input() returns text (a string)
+    guess = int(text)  # convert the text to a number
+
+    tries = tries + 1  # add 1 try
+
+    # Give a hint using if / elif / else.
+    if guess < 1 or guess > 20:
+        print("That number is out of range. Try again.")
+    elif guess < secret:
+        print("Too low, try again.")
+    elif guess > secret:
+        print("Too high, try again.")
+    else:
+        print("You got it in", tries, "tries!")
+```
+
+### Key Takeaways
 
 ## JavaScript: Simple Demo
 <img width="384" height="384" alt="1773400296115-Room_Image-12" src="https://github.com/user-attachments/assets/8241e0d5-1823-4642-a083-ec34ece97733" />
