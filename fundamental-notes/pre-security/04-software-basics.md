@@ -232,7 +232,7 @@ The number-guessing game in Python introduces three core programming concepts. V
 
 You use `let` to declare a variable, which holds a value that can change during the program, and `const` to declare a constant, whose value cannot change once set.
 
-In the game, `tries` and `guess` are variables because they update as the user plays, while `secret` is a constant. The secret number is generated randomly by combining `Math.random()`, which returns a decimal between 0 (inclusive) and 1 (exclusive), with `* 20` to stretch that range, `Math.floor()` to round it down to a whole number, and `+ 1` to shift the result into the 1–20 range. Output is shown to the user with `console.log()`.
+In the game, `tries` and `guess` are variables because they update as the user plays, while `secret` is a constant. The secret number is generated randomly by combining `Math.random()`, which returns a decimal between 0 (inclusive) and 1 (exclusive), with `* 20` to stretch that range, `Math.floor()` to round it down to a whole number, and `+ 1` to shift the result into the 1-20 range. Output is shown to the user with `console.log()`.
 
 ###### The game example is shown below:
 
@@ -338,7 +338,7 @@ try {
 
 The final section makes the game repeatable so the user can keep guessing until they succeed.
 
-This is done with a `while` loop, which repeats its body as long as its condition remains true. The condition `while (guess !== secret)` keeps prompting for new guesses while the guess is not equal to the secret, where `!==` means "not equal." Everything from the earlier tasks—prompting for input, converting it to a number, incrementing `tries`, and running the conditional feedback—now lives inside the loop, so the program continues until the correct number is entered.
+This is done with a `while` loop, which repeats its body as long as its condition remains true. The condition `while (guess !== secret)` keeps prompting for new guesses while the guess is not equal to the secret, where `!==` means "not equal." Everything from the earlier tasks (prompting for input, converting it to a number, incrementing `tries`, and running the conditional feedback) now lives inside the loop, so the program continues until the correct number is entered.
 
 ###### Below is the complete final game, saved as guess_v3.js:
 
@@ -422,7 +422,7 @@ The number-guessing game in JavaScript introduces showing how the language expre
 
 > Add an order → one row is added. Remove an order → only that row disappears; the rest stays intact.
 
-The **Structured Query Language** (SQL) is the language used to ask questions (called **queries**) of a database. A **query** only displays requested data, it does not change the data itself.
+The **Structured Query Language** (SQL) is the language used to ask questions (called **queries**) of a database. A **query** only displays requested data: it does not change the data itself.
 
 ### Writing Your First SQL Query
 
