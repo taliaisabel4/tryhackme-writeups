@@ -336,9 +336,9 @@ try {
 
 The final section makes the game repeatable so the user can keep guessing until they succeed.
 
-This is done with a `while` loop, which repeats its body as long as its condition remains true. The condition `while (guess !== secret)` keeps prompting for new guesses while the guess is not equal to the secret, where `!==` means "not equal." Everything from the earlier tasks—prompting for input, converting it to a number, incrementing `tries`, and running the conditional feedback—now lives inside the loop, so the program continues until the correct number is entered. This complete version (`guess_v3.js`) picks a new secret each time it runs. An optional `guess_v4.js` on the VM refines it further but isn't essential for this introductory room.
+This is done with a `while` loop, which repeats its body as long as its condition remains true. The condition `while (guess !== secret)` keeps prompting for new guesses while the guess is not equal to the secret, where `!==` means "not equal." Everything from the earlier tasks—prompting for input, converting it to a number, incrementing `tries`, and running the conditional feedback—now lives inside the loop, so the program continues until the correct number is entered.
 
-###### Below is the complete final game :
+###### Below is the complete final game, saved as guess_v3.js:
 
 ```javascript
 // Repeat until the user guesses the secret number.
@@ -402,9 +402,9 @@ try {
 
 ### Understanding Tables, Rows, and Columns
 
-**Database**: stores information in an organised way — like a digital notebook that never runs out of pages and can search, count, and sort instantly.
-**Columns**: The titles at the top; each describes one *type* of information (e.g. price).
-**Rows**: Go across the table; each holds one *complete record* (e.g. a single café order).
+**Database**: stores information in an organized way.
+**Columns**: The titles at the top; each describes one type of information.
+**Rows**: Goes across the table; each holds one complete record.
 
 > Inside a database, data lives in **tables** (similar to spreadsheets).
 
@@ -417,17 +417,24 @@ try {
 
 > Add an order → one row is added. Remove an order → only that row disappears; the rest stays intact.
 
-**SQL** is the language used to ask questions (called **queries**) of a database. A query only **displays** requested data, it does **not** change the data itself.
+The **Structured Query Language** (SQL) is the language used to ask questions (called **queries**) of a database. A **query** only displays requested data, it does not change the data itself.
 
 ### Writing Your First SQL Query
 
-Practice uses two tables: `Orders (id, drink, price, time)` and `Menu (drink, price)`.
+The practice uses two tables: `Orders (id, drink, price, time)` and `Menu (drink, price)`.
 
-Four core parts to learn: **SELECT**, **FROM**, **WHERE**, **ORDER BY**.
+###### There are four core parts of the practice:
 
-#### Step 1: View Everything (SELECT + FROM)
+- `SELECT`
+- `FROM`
+- `WHERE`
+- `ORDER BY`
+
+#### Step 1: View Everything (`SELECT` and `FROM`)
 
 `*` means "all columns"; `FROM` names the table.
+
+###### Example shown below:
 
 ```sql
 SELECT * FROM Orders;
@@ -437,30 +444,40 @@ SELECT * FROM Orders;
 
 List the columns you want after `SELECT`.
 
+###### Example shown below:
+
 ```sql
 SELECT drink, price FROM Orders;
 ```
 
-#### Step 3: Filter Results (WHERE)
+#### Step 3: Filter Results (`WHERE`)
 
 `WHERE` keeps only rows matching a condition.
+
+###### Example shown below:
 
 ```sql
 SELECT * FROM Orders WHERE drink = 'Coffee';
 ```
 
-> To check which drink names exist, run `SELECT * FROM Menu;`
+> To check which drink names exist, run `SELECT * FROM Menu;`.
 
-#### Step 4: Sort Results (ORDER BY)
+#### Step 4: Sort Results (`ORDER BY`)
 
 Sorts by a column; ascending by default. Add `DESC` for descending.
 
+###### Example shown below:
+
 ```sql
-SELECT * FROM Orders ORDER BY price;        -- lowest first
-SELECT * FROM Orders ORDER BY price DESC;   -- highest first
+SELECT * FROM Orders ORDER BY price;
+SELECT * FROM Orders ORDER BY price DESC;
 ```
 
-#### Step 5: Combine Filtering + Sorting
+> The first line is lowest first, while the second line is highest first.
+
+#### Step 5: Combine Filtering and Sorting
+
+###### Example shown below:
 
 ```sql
 SELECT * FROM Orders WHERE drink = 'Coffee' ORDER BY price DESC;
