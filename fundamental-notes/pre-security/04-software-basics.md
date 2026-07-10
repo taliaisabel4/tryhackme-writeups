@@ -36,7 +36,7 @@ Being limited to eight colors is inconvenient, as we prefer millions of colors. 
 
 #### Hexadecimal Representation
 
-Hexadecimal representation makes it easy to combine 4 bits into a single character, a hexadecimal digit
+Hexadecimal representation makes it easy to combine 4 bits into a single character, a hexadecimal digit.
 
 ###### Hexadecimal to binary representation:
 
@@ -137,7 +137,11 @@ ASCII provided a way to encode the English alphabet. ASCII uses 7 bits, and with
 
 ### Variables
 
-**Variables** store values the program tracks: `secret` (the number to guess), `tries` (attempt counter), and `guess` (the user's input). The `random.randint(1, 20)` method returns a random integer within the given bounds. `tries` and `guess` both start at `0` — `guess` starts at 0 deliberately because a valid secret is 1–20, so it can never accidentally match. `print()` displays messages, `input()` captures text from the user, and `int()` converts that text into a number so it can be compared. Each guess increments the counter with `tries = tries + 1` (saved as `guess_v1.py`).
+**Variables** store values the program tracks: `secret` (the number to guess), `tries` (attempt counter), and `guess` (the user's input).
+
+The `random.randint(1, 20)` method returns a random integer within the given bounds. `tries` and `guess` both start at `0` - `guess` starts at 0 deliberately because a valid secret is 1-20, so it can never accidentally match. `print()` displays messages, `input()` captures text from the user, and `int()` converts that text into a number so it can be compared. Each guess increments the counter with `tries = tries + 1` (saved as `guess_v1.py`).
+
+###### The game example is shown below:
 
 ```python
 import random  # Gives us tools for picking random numbers
@@ -156,7 +160,11 @@ tries = tries + 1  # Add 1 try
 
 ### Conditional Statements
 
-**Conditional statements** compare the guess to the secret using `if` / `elif` / `else`. Python checks `if` first; if false it tries each `elif` (Python's "else if"); if none are true it runs the final `else`. The four cases are out of range, too low, too high, or correct, using comparison operators (`<`, `>`) and the logical operator `or`. For example, with a secret of 10 and an input of 50, the first condition is true and it prints the "out of range" message (saved as `guess_v2.py`).
+**Conditional statements** compare the guess to the secret using `if` / `elif` / `else`.
+
+Python checks `if` first; if false it tries each `elif` (Python's "else if"); if none are true it runs the final `else`. The four cases are out of range, too low, too high, or correct, using comparison operators (`<`, `>`) and the logical operator `or`. For example, with a secret of 10 and an input of 50, the first condition is true and it prints the "out of range" message (saved as `guess_v2.py`).
+
+###### The game example is shown below:
 
 ```python
 # Give a hint using if / elif / else.
@@ -172,7 +180,11 @@ else:
 
 ### Iterations
 
-**Iterations** (loops) repeat a block of code as long as a condition holds, giving the user unlimited guesses. The game uses a `while` loop written as `while guess != secret:`, where `!=` means "does not equal." Python checks the condition before each pass: if true it runs the indented block; if false the loop ends. Because `guess` starts at 0, the loop always runs at least once and stops only when the guess equals the secret (e.g., `10 != 10` is false, so it terminates). Below is the complete final game (saved as `guess_v3.py`).
+**Iterations** (loops) repeat a block of code as long as a condition holds, giving the user unlimited guesses.
+
+The game uses a `while` loop written as `while guess != secret:`, where `!=` means "does not equal." Python checks the condition before each pass: if true it runs the indented block; if false the loop ends. Because `guess` starts at 0, the loop always runs at least once and stops only when the guess equals the secret (e.g., `10 != 10` is false, so it terminates).
+
+###### Below is the complete final game, saved as `guess_v3.py`:
 
 ```python
 import random  # Gives us tools for picking random numbers
@@ -216,14 +228,17 @@ while guess != secret:
 
 ### Variables
 
-This section introduces how JavaScript stores data. You use `let` to declare a variable, which holds a value that can change during the program, and `const` to declare a constant, whose value cannot change once set. In the game, `tries` and `guess` are variables because they update as the user plays, while `secret` is a
-constant. The secret number is generated randomly by combining `Math.random()`, which returns a decimal between 0 (inclusive) and 1 (exclusive), with `* 20` to stretch that range, `Math.floor()` to round it down to a whole number, and `+ 1` to shift the result into the 1–20 range. Output is shown to the user with `console.log()`.
+You use `let` to declare a variable, which holds a value that can change during the program, and `const` to declare a constant, whose value cannot change once set.
+
+In the game, `tries` and `guess` are variables because they update as the user plays, while `secret` is a constant. The secret number is generated randomly by combining `Math.random()`, which returns a decimal between 0 (inclusive) and 1 (exclusive), with `* 20` to stretch that range, `Math.floor()` to round it down to a whole number, and `+ 1` to shift the result into the 1–20 range. Output is shown to the user with `console.log()`.
+
+###### The game example is shown below:
 
 ```javascript
 let tries = 0;
-let guess = 0; // initialized to a value that can't be the secret (1..20)
+let guess = 0; // Initialized to a value that can't be the secret (1..20)
 
-// secret is constant and gets a new random value each run (1 <= secret <= 20)
+// Secret is constant and gets a new random value each run (1 <= secret <= 20)
 const secret = Math.floor(Math.random() * (20)) + 1;
 
 console.log("I'm thinking of a number between 1 and 20");
@@ -231,7 +246,11 @@ console.log("I'm thinking of a number between 1 and 20");
 
 ### Prompting the User for Input
 
-Here the program asks the player to make a guess and captures what they type. The line `rl.question()` waits for the user to enter a value and returns it as a string, which is stored in `text`. Because that input arrives as text rather than a number, it's passed through `parseInt(text, 10)`, which converts the string into an integer using base 10, and the result is saved in `guess`. This first draft (`guess_v1.js`) sets up the variables, picks the secret, prompts once, and counts the attempt, but it doesn't yet give the user any feedback about their guess.
+The program asks the player to make a guess and captures what they type.
+
+The line `rl.question()` waits for the user to enter a value and returns it as a string, which is stored in `text`. Because that input arrives as text rather than a number, it's passed through `parseInt(text, 10)`, which converts the string into an integer using base 10, and the result is saved in `guess`. This first draft (`guess_v1.js`) sets up the variables, picks the secret, prompts once, and counts the attempt, but it doesn't yet give the user any feedback about their guess.
+
+###### The game examples is shown below:
 
 ```javascript
 const text = await rl.question("Take a guess: ");
@@ -247,14 +266,14 @@ const rl = readline.createInterface({ input, output });
 try {
   const secret = Math.floor(Math.random() * (20)) + 1; // 1 <= secret <= 20
   let tries = 0;
-  let guess = 0; // start with a value that cannot be the secret (since secret is 1..20)
+  let guess = 0; // Start with a value that cannot be the secret (since secret is 1..20)
 
   console.log("I'm thinking of a number between 1 and 20");
 
-  const text = await rl.question("Take a guess: "); // returns text (a string)
-  guess = parseInt(text, 10); // convert the text to a number
+  const text = await rl.question("Take a guess: "); // Returns text (a string)
+  guess = parseInt(text, 10); // Convert the text to a number
 
-  tries = tries + 1; // add 1 try
+  tries = tries + 1; // Add 1 try
 } finally {
   rl.close();
 }
@@ -262,9 +281,11 @@ try {
 
 ### Conditional Statements
 
-This section makes the game responsive by evaluating the guess and giving feedback. Using an `if` / `else if` / `else` chain, the program first checks whether the guess is out of range (less than 1 or greater than 20, where `||` means "or"), then whether it is lower than the secret, then whether it is higher, and finally, if none of those are true, it concludes the guess must be correct.
-Because the conditions are mutually exclusive, chaining them with `else` avoids checking later conditions once an earlier one is satisfied. This draft
-(`guess_v2.js`) now tells the user whether they are out of range, too low, too high, or correct, but it still only runs once and gives them a single chance.
+THe program makes the game responsive by evaluating the guess and giving feedback.
+
+Using an `if` / `else if` / `else` chain, the program first checks whether the guess is out of range (less than 1 or greater than 20, where `||` means "or"), then whether it is lower than the secret, then whether it is higher, and finally, if none of those are true, it concludes the guess must be correct. Because the conditions are mutually exclusive, chaining them with `else` avoids checking later conditions once an earlier one is satisfied. This draft (`guess_v2.js`) now tells the user whether they are out of range, too low, too high, or correct, but it still only runs once and gives them a single chance.
+
+###### The game examples is shown below:
 
 ```javascript
 // Give a hint using if / else if / else.
@@ -313,7 +334,11 @@ try {
 
 ### Iterations
 
-The final section makes the game repeatable so the user can keep guessing until they succeed. This is done with a `while` loop, which repeats its body as long as its condition remains true. The condition `while (guess !== secret)` keeps prompting for new guesses while the guess is not equal to the secret, where `!==` means "not equal." Everything from the earlier tasks—prompting for input, converting it to a number, incrementing `tries`, and running the conditional feedback—now lives inside the loop, so the program continues until the correct number is entered. This complete version (`guess_v3.js`) picks a new secret each time it runs. An optional `guess_v4.js` on the VM refines it further but isn't essential for this introductory room.
+The final section makes the game repeatable so the user can keep guessing until they succeed.
+
+This is done with a `while` loop, which repeats its body as long as its condition remains true. The condition `while (guess !== secret)` keeps prompting for new guesses while the guess is not equal to the secret, where `!==` means "not equal." Everything from the earlier tasks—prompting for input, converting it to a number, incrementing `tries`, and running the conditional feedback—now lives inside the loop, so the program continues until the correct number is entered. This complete version (`guess_v3.js`) picks a new secret each time it runs. An optional `guess_v4.js` on the VM refines it further but isn't essential for this introductory room.
+
+###### Below is the complete final game :
 
 ```javascript
 // Repeat until the user guesses the secret number.
