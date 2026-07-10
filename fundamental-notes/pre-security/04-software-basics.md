@@ -2,10 +2,9 @@
 
 *This module explores how software represents and encodes data, and introduces the basics of programming and databases through Python, JavaScript, and SQL.*
 
-[Data Representation](#data-representation) · [Data Encoding](#data-encoding) · [Python: Simple Demo](#python-simple-demo) · [JavaScript: Simple Demo](#javascript-simple-demo) · [Database SQL Basics](#database-sql-basics)
+[Data Representation](#-data-representation) · [Data Encoding](#-data-encoding) · [Python: Simple Demo](#-python-simple-demo) · [JavaScript: Simple Demo](#-javascript-simple-demo) · [Database SQL Basics](#-database-sql-basics)
 
-## Data Representation
-<img width="384" height="384" alt="1773400279781-Room_Image-10" src="https://github.com/user-attachments/assets/5a583db9-a169-4b89-b4f6-412866bea4fe" />
+## <img src="https://github.com/user-attachments/assets/5a583db9-a169-4b89-b4f6-412866bea4fe" width="50" height="50" align="middle" alt="Data Representation room icon"> Data Representation
 
 *This room covers how computers represent data using bits and bytes, from colors and binary to hexadecimal and number conversions.*
 
@@ -88,8 +87,9 @@ The binary (base-2) system can be expressed using the decimal (base-10) system.
 
 ### Key Takeaways
 
-## Data Encoding
-<img width="384" height="384" alt="1773400285735-Room_Image-13" src="https://github.com/user-attachments/assets/67677f33-ae44-462a-b78c-96769626bc7d" />
+Computers represent all data as bits, the binary 1s and 0s that stand for on and off states. Combining bits expands what can be represented: three bits can encode eight colors, a byte of eight bits covers 256 values, and grouping enough bits allows millions of colors. Hexadecimal provides a compact way to write binary, with each hex digit standing for exactly four bits, which is why binary, decimal, and hexadecimal are used interchangeably to express the same underlying values.
+
+## <img src="https://github.com/user-attachments/assets/67677f33-ae44-462a-b78c-96769626bc7d" width="50" height="50" align="middle" alt="Data Encoding room icon"> Data Encoding
 
 *This room covers how text is encoded into numbers, from ASCII and the ISO/IEC 8859 standards to Unicode and the UTF encodings.*
 
@@ -130,8 +130,9 @@ ASCII provided a way to encode the English alphabet. ASCII uses 7 bits, and with
 
 ### Key Takeaways
 
-## Python: Simple Demo
-<img width="384" height="384" alt="1773400291430-Room_Image-11" src="https://github.com/user-attachments/assets/c27b1a73-9710-481d-9e60-7abb4f84785a" />
+Character encoding maps text to numbers so computers can store and exchange it. ASCII was an early standard using seven bits to cover English letters, digits, and control characters, and the ISO/IEC 8859 series extended it with an eighth bit to support additional European languages. Unicode now provides a universal standard covering virtually all writing systems, and its UTF-8, UTF-16, and UTF-32 encodings offer different trade-offs between space efficiency and simplicity, with UTF-8 dominating the web.
+
+## <img src="https://github.com/user-attachments/assets/c27b1a73-9710-481d-9e60-7abb4f84785a" width="50" height="50" align="middle" alt="Python: Simple Demo room icon"> Python: Simple Demo
 
 *This room covers Python fundamentals such as variables, conditional statements, and iteration, by building a simple number-guessing game.*
 
@@ -221,8 +222,9 @@ while guess != secret:
 
 ### Key Takeaways
 
-## JavaScript: Simple Demo
-<img width="384" height="384" alt="1773400296115-Room_Image-12" src="https://github.com/user-attachments/assets/8241e0d5-1823-4642-a083-ec34ece97733" />
+The number-guessing game in Python introduces three core programming concepts. Variables store the values the program tracks, such as the secret number and the count of tries, while conditional statements (if, elif, else) compare the guess to the secret and decide which message to show. Iteration with a while loop repeats the guessing process until the correct answer is entered, turning the individual pieces into a complete, interactive program.
+
+## <img src="https://github.com/user-attachments/assets/8241e0d5-1823-4642-a083-ec34ece97733" width="50" height="50" align="middle" alt="JavaScript: Simple Demo room icon"> JavaScript: Simple Demo
 
 *This room covers JavaScript fundamentals such as variables, user input, conditional statements, and iteration, by building the same number-guessing game in JavaScript.*
 
@@ -395,8 +397,11 @@ try {
 }
 ```
 
-## Database SQL Basics
-<img width="384" height="384" alt="1773400301430-Room_Image-14" src="https://github.com/user-attachments/assets/d3676ecc-be94-4622-94b5-cbd42e45263d" />
+### Key Takeaways
+
+The number-guessing game in JavaScript introduces showing how the language expresses the same concepts. Variables are declared with let for values that change and const for those that do not, user input is captured as text and converted to a number with parseInt, and an if / else if / else chain provides feedback on each guess. A while loop then repeats the process until the guess matches the secret.
+
+## <img src="https://github.com/user-attachments/assets/d3676ecc-be94-4622-94b5-cbd42e45263d" width="50" height="50" align="middle" alt="Database SQL Basics room icon"> Database SQL Basics
 
 *This room covers the basics of databases and SQL, including tables, rows, and columns, and how to query data with SELECT, FROM, WHERE, and ORDER BY.*
 
@@ -493,3 +498,5 @@ SELECT * FROM Orders WHERE drink = 'Coffee' ORDER BY price DESC;
 | `ORDER BY` | Sort results (`DESC` = reverse) |
 
 ### Key Takeaways
+
+Databases store information in tables made up of columns, which define the type of each piece of data, and rows, which hold individual records. SQL is the language used to query that data, and a query only displays information without changing what is stored. The four core clauses build on each other: `SELECT` and `FROM` choose the columns and table, `WHERE` filters rows by a condition, and `ORDER` BY sorts the results.
