@@ -16,7 +16,7 @@ Lightweight operating systems like Ubuntu often have no GUI (desktop environment
 
 ###### A terminal prompt looks like this:
 
-```
+```console
 tryhackme@linux1:~$ enter commands here
 ```
 
@@ -26,7 +26,7 @@ tryhackme@linux1:~$ enter commands here
 
 ###### With `echo`, a single word needs no quotes, but any string containing spaces should be wrapped in double quotes:
 
-```
+```console
 tryhackme@linux1:~$ echo Hello
 Hello
 tryhackme@linux1:~$ echo "Hello Friend!"
@@ -35,7 +35,7 @@ Hello Friend!
 
 ###### Using `whoami` to check the current username:
 
-```
+```console
 tryhackme@linux1:~$ whoami
 ```
 
@@ -53,21 +53,21 @@ Being able to navigate a machine without a desktop environment is important.
 
 ###### `ls` lists the current directory's contents:
 
-```
+```console
 tryhackme@linux1:~$ ls
 'Important Files' 'My Documents' Notes Pictures
 ```
 
 ###### `cd` changes the directory:
 
-```
+```console
 tryhackme@linux1:~$ cd Documents
 tryhackme@linux1:~/Documents$
 ```
 
 ###### `cat` outputs the file contents:
 
-```
+```console
 tryhackme@linux1:~/Documents$ ls
 todo.txt
 tryhackme@linux1:~/Documents$ cat todo.txt
@@ -76,7 +76,7 @@ Here's something important for me to do later!
 
 ###### `pwd` finds your location:
 
-```
+```console
 tryhackme@linux1:~/Documents$ pwd
 /home/ubuntu/Documents
 ```
@@ -93,13 +93,13 @@ Rather than repeatedly using `cd` and `ls` to hunt through directories, Linux le
 
 ###### `find` looks through every folder in the current directory:
 
-```
+```console
 tryhackme@linux1:~$ find -name passwords.txt
 ./folder1/passwords.txt
 ```
 ###### If you don't know the exact name, use a wildcard `*` to match by extension:
 
-```
+```console
 tryhackme@linux1:~$ find -name *.txt
 ./folder1/passwords.txt
 ./Documents/todo.txt
@@ -107,14 +107,14 @@ tryhackme@linux1:~$ find -name *.txt
 
 ###### `grep` searches the file's contents for a specific value, such as everything a given IP address visited in a web server's access log:
 
-```
+```console
 tryhackme@linux1:~$ grep "81.143.211.90" access.log
 81.143.211.90 - - [25/Mar/2021:11:17 + 0000] "GET / HTTP/1.1" 200 417 "-" "Mozilla/5.0 (Linux; Android 7.0; Moto G(4))"
 ```
 
 ###### `wc -l` counts the number of lines/entries in this file:
 
-```
+```console
 tryhackme@linux1:~$ wc -l access.log
 244 access.log
 ```
@@ -148,7 +148,7 @@ Most commands accept **arguments**, which are extra keywords supplied to change 
 
 ###### The commands `ls` and `ls -a` are shown:
 
-```
+```console
 tryhackme@linux2:~$ ls
 folder1
 tryhackme@linux2:~$ ls -a
@@ -161,7 +161,7 @@ Commands that accept arguments also support a `--help` option, which lists the p
 
 ###### The command `--help` is shown:
 
-```
+```console
 tryhackme@linux2:~$ ls --help
 ```
 
@@ -171,7 +171,7 @@ The manual pages are a great source of information for both system commands and 
 
 ###### Access it with the `man` command followed by the command name:
 
-```
+```console
 tryhackme@linux2:~$ man ls
 ```
 
@@ -198,7 +198,7 @@ Running `ls -l` (or `ls -lh` for human-readable sizes) shows ten columns, but th
 
 ###### An example of using the `ls -lh` command:
 
-```
+```console
 tryhackme@linux2:~$ ls -lh
 -rw-r--r-- 1 cmnatic cmnatic 0 Feb 19 10:37 file1
 -rw-r--r-- 8 cmnatic cmnatic 0 Feb 19 10:37 file2
@@ -214,12 +214,12 @@ Switching between users (`su`), unless you're root (or using `sudo`), you need t
 
 ###### Examples using the `su` and `su -l` commands:
 
-```
+```console
 tryhackme@linux2:~$ su user2
 Password:
 ```
 
-```
+```console
 tryhackme@linux2:~$ su -l user2
 Password:
 user2@linux2:~$
@@ -297,7 +297,7 @@ Storing text with `echo` and redirection (`>`, `>>`) is inefficient for multi-li
 
 Using the `nano` command:
 
-```
+```console
 tryhackme@linux3:/tmp# nano myfile
 ```
 
@@ -309,7 +309,7 @@ These utilities cover downloading, transferring, and serving files.
 
 ###### Provide the resource address:
 
-```
+```bash
 wget https://assets.tryhackme.com/additional/linux-fundamentals/part3/myfile.txt
 ```
 
@@ -317,7 +317,7 @@ wget https://assets.tryhackme.com/additional/linux-fundamentals/part3/myfile.txt
 
 ###### An example is shown:
 
-```
+```bash
 # Local -> Remote (upload important.txt as transferred.txt)
 scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt
 
@@ -329,7 +329,7 @@ scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt
 
 ###### An example is shown:
 
-```
+```bash
 # Start the server (in the directory you want to serve)
 python3 -m http.server
 # Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
@@ -364,7 +364,7 @@ The OS uses namespaces to divide resources (CPU, RAM, priority) among processes 
 
 ###### Starting and stopping a service and starting automatically on boot:
 
-```
+```bash
 systemctl start apache2
 systemctl stop myservice
 systemctl enable myservice
