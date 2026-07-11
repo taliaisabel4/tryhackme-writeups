@@ -233,7 +233,7 @@ These permissions are often displayed in symbolic format, such as: `rwxrwxrwx`.
 
 ###### This format is split into three groups:
 
-| Section | Applies To | Example |
+| **Section** | **Applies To** | **Example** |
 | --- | --- | --- |
 | First 3 | Owner | `rwx` |
 | Next 3 | Group | `rwx` |
@@ -282,5 +282,121 @@ There are many common directories such as `/etc`, `/var`, `/root`, and `/tmp`.
 ## Linux Fundamentals Part 3
 
 *This room covers...*
+
+### Terminal Text Editors
+
+Storing text with `ech`o and redirection (`>`, `>>`) is inefficient for multi-line files. Dedicated terminal text editors solve this.
+
+`nano` is a simple, easy-to-learn editor. Key features include searching text, copy/paste, jumping to a line number, and showing your current line number.
+
+`VIM` is a much more advanced editor with a steeper learning curve. It's customizable (remap keyboard shortcuts), offers syntax highlighting (popular with developers), works on nearly all terminals where Nano may not be installed, and has plenty of cheatsheets/tutorials available.
+
+Using the `nano` command:
+
+```
+tryhackme@linux3:/tmp# nano myfile
+```
+
+### General/Useful Utilities
+
+These utilities cover downloading, transferring, and serving files.
+
+`wget` downloads files from the web over HTTP, as if accessing the file in a browser.
+
+###### Provide the resource address:
+
+```
+wget https://assets.tryhackme.com/additional/linux-fundamentals/part3/myfile.txt
+```
+
+`scp` (Secure Copy) securely copies files between two computers over SSH, providing both authentication and encryptionIt can copy from your system to a remote system, or from a remote system to yours.
+
+###### An example is shown:
+
+```
+# Local -> Remote (upload important.txt as transferred.txt)
+scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt
+
+# Remote -> Local (download documents.txt, save as notes.txt)
+scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt
+```
+
+**Python3 HTTPServer**: Ubuntu ships with python3, which provides a lightweight, quick web server module. It serves files from the directory where you run it (the default port is 8000). Files can then be downloaded elsewhere with `curl` or `wget`.
+
+###### An example is shown:
+
+```
+# Start the server (in the directory you want to serve)
+python3 -m http.server
+# Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+
+# In a separate terminal, download a served file
+wget http://MACHINE_IP:8000/file
+```
+
+> The server occupies its terminal until you cancel it with Ctrl+C, so use a second terminal for `wget`.
+
+### Processes 101
+
+**Processes** are the programs running on your machine, managed by the kernel. Each has a **PID** (Process ID) that increments in the order processes start.
+
+###### Viewing processes:
+
+- **`ps`**: Lists processes in your current user session, with status code, session, CPU time, and command name.
+- **`ps aux`**: Shows all processes including those from other users and system processes not tied to a session.
+- **`top`**: Real-time, continually refreshing statistics about running processes.
+
+> To manage/kill a process, use: `kill <PID>`.
+
+###### Signals control how cleanly the process is terminated:
+
+| **Signal** | **Effect** |
+| --- | --- |
+| `SIGTERM` | Kill the process, but allow it to do cleanup first |
+| `SIGKILL` | Kill immediately, no cleanup |
+| `SIGSTOP` | Stop/suspend the process |
+
+The OS uses namespaces to divide resources (CPU, RAM, priority) among processes and to isolate them for security; only processes in the same namespace can see each other. The process with PID 0 starts at boot — the system's init, which sits between the OS and the user. Programs you launch run as child processes of systemd, controlled by it but running with their own resources.
+
+###### Starting and stopping a service and starting automatically on boot:
+
+```
+systemctl start apache2
+systemctl stop myservice
+systemctl enable myservice
+```
+
+Processes run in the foreground or background. Append `&` to run a command in the background (it returns the process ID instead of output), useful for long tasks like copying files while you keep working. Press Ctrl+Z to suspend/background a running process or script. Bring a backgrounded process back with `fg`.
+
+### Maintaining Your System: Automation
+
+Automation lets you schedule tasks to run at set times (backups, launching programs, running commands). This is handled by the `cron` process, which you interact with through `crontabs`.
+
+###### A crontab is a special file whose formatting cron reads and executes line by line:
+
+| **Field** | **Meaning** |
+| --- | --- |
+| `MIN` | Minute to execute at |
+| `HOUR` | Hour to execute at |
+| `DOM` | Day of the month |
+| `MON` | Month of the year |
+| `DOW` | Day of the week |
+| `CMD` | The command to execute |
+
+> Use the wildcard/asterisk `*` for any field you don't care about.
+
+### Maintaining Your System: Package Management
+
+Developers submit software to an apt repository; if approved it becomes publicly available, reflecting the Linux's user accessibility and open-source strengths. OS vendors maintain their own repos, and you can add community/3rd-party repos to extend your OS's capabilities.
+
+The `apt` command is part of the apt package management suite, used to manage packages/sources and install or remove software. A key benefit over installers like `dpkg`: when you update the system, added repositories are also checked for updates. Software integrity is guaranteed using the Gnu Privacy Guard (GPG) keys.
+
+> If the developer's keys don't match what your system trusts, the software won't download.
+
+### Maintaining Your System: Logs
+
+Log files live in the /var/log directory and contain logging information for applications and services on your system. The OS automatically manages them through a process called **rotating**.
+
+Logs are valuable for monitoring system health and security. Web server logs record every request, letting admins diagnose performance issues or investigate an intruder's activity. 
 
 ### Key Takeaways
