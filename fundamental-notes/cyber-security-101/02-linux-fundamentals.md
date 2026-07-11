@@ -1,13 +1,14 @@
 # Linux Fundamentals
 
-*This module ...*
+*This module builds from the first commands and filesystem navigation, through flags, permissions, and system directories, and finishes with text editors, processes, and the automation, packages, and logs that keep a system running.*
+
+[Linux Fundamentals Part 1](#-linux-fundamentals-part-1) · [Linux Fundamentals Part 2](#-linux-fundamentals-part-2) · [Linux Fundamentals Part 3](#-linux-fundamentals-part-3)
 
 > Notes from the second section of TryHackMe's **Cyber Security 101** learning path.
 
-## Linux Fundamentals Part 1
-<img width="96" height="96" alt="1773338653719-linuxfundamentalspart1" src="https://github.com/user-attachments/assets/705adee7-47f3-4434-b04b-c6c9b14add54" />
+## <img src="https://github.com/user-attachments/assets/705adee7-47f3-4434-b04b-c6c9b14add54" width="50" height="50" align="middle" alt="Linux Fundamentals Part 1 room icon"> Linux Fundamentals Part 1
 
-*This room covers...*
+*This room covers the terminal, the first essential commands, searching the filesystem, and shell operators.*
 
 ### Running Your First Few Commands
 
@@ -38,7 +39,7 @@ Hello Friend!
 tryhackme@linux1:~$ whoami
 ```
 
-### Interafcting with the Filesystem
+### Interacting with the Filesystem
 
 Being able to navigate a machine without a desktop environment is important.
 
@@ -61,7 +62,7 @@ tryhackme@linux1:~$ ls
 
 ```
 tryhackme@linux1:~$ cd Documents
-tryhackme@linux1:~/Documents$ 
+tryhackme@linux1:~/Documents$
 ```
 
 ###### `cat` outputs the file contents:
@@ -82,7 +83,7 @@ tryhackme@linux1:~/Documents$ pwd
 
 ### Searching for Files
 
-Rather than repeatedly using `cd` and `ls` to hunt through directories, Linux lets you search the whole filesystem quickly using dedicated commands. 
+Rather than repeatedly using `cd` and `ls` to hunt through directories, Linux lets you search the whole filesystem quickly using dedicated commands.
 
 **`find`**: Searches through folders (and subfolders) to locate files.
 
@@ -133,18 +134,19 @@ Shell operators are a powerful way to combine and control commands.
 
 ### Key Takeaways
 
-## Linux Fundamentals Part 2
-<img width="96" height="96" alt="1773338657502-linuxfundamentalspart1" src="https://github.com/user-attachments/assets/a454ca29-dd2e-435d-8c54-e746534f9a79" />
+Linux systems are often managed entirely from the terminal, with no graphical desktop available. A small set of commands covers most navigation and inspection needs, including `ls`, `cd`, `cat`, and `pwd` for moving around and reading files, and `find`, `grep`, and `wc -l` for locating files and searching their contents. Shell operators like `&&`, `>`, and `>>` chain commands together and redirect their output, turning individual commands into more useful workflows.
 
-*This room covers...*
+## <img src="https://github.com/user-attachments/assets/a454ca29-dd2e-435d-8c54-e746534f9a79" width="50" height="50" align="middle" alt="Linux Fundamentals Part 2 room icon"> Linux Fundamentals Part 2
+
+*This room covers flags and manual pages, filesystem manipulation, permissions and user switching, and the common system directories.*
 
 ### Introduction to Flags and Switches
 
-Most commands accept **arguments**, which are extra keywords supplied to change how a command behaves. These are identified by a hyphen followed by a keyword, and are known as **flags** or **switches**. Without any flags, a command performs its default behaviour; flags extend that behaviour.
+Most commands accept **arguments**, which are extra keywords supplied to change how a command behaves. These are identified by a hyphen followed by a keyword, and are known as **flags** or **switches**. Without any flags, a command performs its default behaviour; flags extend that behavior.
 
-`l`s lists the contents of the working directory but hides files/folders that begin with a dot (.). Adding the `-a` flag reveals the hidden folder(s).
+`ls` lists the contents of the working directory but hides files/folders that begin with a dot (.). Adding the `-a` flag reveals the hidden folder(s).
 
-###### The commands `ls` and `ls -a` is shown:
+###### The commands `ls` and `ls -a` are shown:
 
 ```
 tryhackme@linux2:~$ ls
@@ -153,7 +155,7 @@ tryhackme@linux2:~$ ls -a
 .hiddenfolder folder1
 ```
 
-> The `-a` command is the same as using the `-all` command.
+> The `-a` flag is the same as using the `--all` flag.
 
 Commands that accept arguments also support a `--help` option, which lists the possible options with brief descriptions and examples.
 
@@ -173,11 +175,9 @@ The manual pages are a great source of information for both system commands and 
 tryhackme@linux2:~$ man ls
 ```
 
-> Inside a man page, navigate down with the down arrow key, and use the `-h` flag (with many commands) to display sizes in a human-readable format.
-
 ### Filesystem Interaction
 
-The filesystem to allow us to create, move, and delete files and folders.
+The filesystem allows us to create, move, and delete files and folders.
 
 ###### The filesystem commands:
 
@@ -281,14 +281,15 @@ There are many common directories such as `/etc`, `/var`, `/root`, and `/tmp`.
 
 ### Key Takeaways
 
-## Linux Fundamentals Part 3
-<img width="96" height="96" alt="1773338660579-linuxfundamentalspart1" src="https://github.com/user-attachments/assets/69b3fdb6-b245-4cd1-8149-7b4122a6ec60" />
+Flags extend a command's default behavior, and `--help` and `ma`n make any unfamiliar command self-documenting. Linux permissions are granular, controlling read, write, and execute access separately for the owner, the group, and everyone else, which lets multiple users share a system without granting each other more access than they need. Knowing the purpose of directories like `/etc`, `/var`, `/root`, and `/tmp` tells you where configuration lives, where logs accumulate, and where an attacker might look first.
 
-*This room covers...*
+## <img src="https://github.com/user-attachments/assets/69b3fdb6-b245-4cd1-8149-7b4122a6ec60" width="50" height="50" align="middle" alt="Linux Fundamentals Part 3 room icon"> Linux Fundamentals Part 3
+
+*This room covers terminal text editors, file transfer utilities, process management, and maintaining a system through automation, packages, and logs.*
 
 ### Terminal Text Editors
 
-Storing text with `ech`o and redirection (`>`, `>>`) is inefficient for multi-line files. Dedicated terminal text editors solve this.
+Storing text with `echo` and redirection (`>`, `>>`) is inefficient for multi-line files. Dedicated terminal text editors solve this.
 
 `nano` is a simple, easy-to-learn editor. Key features include searching text, copy/paste, jumping to a line number, and showing your current line number.
 
@@ -312,7 +313,7 @@ These utilities cover downloading, transferring, and serving files.
 wget https://assets.tryhackme.com/additional/linux-fundamentals/part3/myfile.txt
 ```
 
-`scp` (Secure Copy) securely copies files between two computers over SSH, providing both authentication and encryptionIt can copy from your system to a remote system, or from a remote system to yours.
+`scp` (Secure Copy) securely copies files between two computers over SSH, providing both authentication and encryption. It can copy from your system to a remote system, or from a remote system to yours.
 
 ###### An example is shown:
 
@@ -359,7 +360,7 @@ wget http://MACHINE_IP:8000/file
 | `SIGKILL` | Kill immediately, no cleanup |
 | `SIGSTOP` | Stop/suspend the process |
 
-The OS uses namespaces to divide resources (CPU, RAM, priority) among processes and to isolate them for security; only processes in the same namespace can see each other. The process with PID 0 starts at boot — the system's init, which sits between the OS and the user. Programs you launch run as child processes of systemd, controlled by it but running with their own resources.
+The OS uses namespaces to divide resources (CPU, RAM, priority) among processes and to isolate them for security; only processes in the same namespace can see each other. The process with PID 1 starts at boot. This is the system's init, which sits between the OS and the user. Programs you launch run as child processes of systemd, controlled by it but running with their own resources.
 
 ###### Starting and stopping a service and starting automatically on boot:
 
@@ -400,6 +401,8 @@ The `apt` command is part of the apt package management suite, used to manage pa
 
 Log files live in the /var/log directory and contain logging information for applications and services on your system. The OS automatically manages them through a process called **rotating**.
 
-Logs are valuable for monitoring system health and security. Web server logs record every request, letting admins diagnose performance issues or investigate an intruder's activity. 
+Logs are valuable for monitoring system health and security. Web server logs record every request, letting admins diagnose performance issues or investigate an intruder's activity.
 
 ### Key Takeaways
+
+Terminal editors like `nano` and `VIM` make it practical to work with files directly on a remote machine, while `wget`, `scp`, and a quick Python HTTP server move files between systems. Processes are managed through the kernel and identified by PID, and tools like `ps`, `top`, and `kill` show what is running and stop it cleanly or forcefully. Routine maintenance rests on cron for scheduled tasks, `apt` for verified software installation, and the logs in `/var/log`, which record the activity an analyst relies on when investigating an intrusion.
