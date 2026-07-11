@@ -415,7 +415,7 @@ The number-guessing game in JavaScript introduces showing how the language expre
 
 **Café example:**
 
-| Concept | Example |
+| **Concept** | **Example** |
 |---|---|
 | Columns | Order number, drink, price, time |
 | Row     | One complete café order |
@@ -490,7 +490,7 @@ SELECT * FROM Orders WHERE drink = 'Coffee' ORDER BY price DESC;
 
 #### Quick Reference
 
-| Keyword | Purpose |
+| **Keyword** | **Purpose** |
 |---------|---------|
 | `SELECT` | Choose which columns to show (`*` = all) |
 | `FROM` | Choose which table |
