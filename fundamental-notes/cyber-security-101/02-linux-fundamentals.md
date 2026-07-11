@@ -5,6 +5,7 @@
 > Notes from the second section of TryHackMe's **Cyber Security 101** learning path.
 
 ## Linux Fundamentals Part 1
+<img width="96" height="96" alt="1773338653719-linuxfundamentalspart1" src="https://github.com/user-attachments/assets/705adee7-47f3-4434-b04b-c6c9b14add54" />
 
 *This room covers...*
 
@@ -133,6 +134,7 @@ Shell operators are a powerful way to combine and control commands.
 ### Key Takeaways
 
 ## Linux Fundamentals Part 2
+<img width="96" height="96" alt="1773338657502-linuxfundamentalspart1" src="https://github.com/user-attachments/assets/a454ca29-dd2e-435d-8c54-e746534f9a79" />
 
 *This room covers...*
 
@@ -280,6 +282,7 @@ There are many common directories such as `/etc`, `/var`, `/root`, and `/tmp`.
 ### Key Takeaways
 
 ## Linux Fundamentals Part 3
+<img width="96" height="96" alt="1773338660579-linuxfundamentalspart1" src="https://github.com/user-attachments/assets/69b3fdb6-b245-4cd1-8149-7b4122a6ec60" />
 
 *This room covers...*
 
