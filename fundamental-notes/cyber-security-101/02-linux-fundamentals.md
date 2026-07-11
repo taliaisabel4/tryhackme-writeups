@@ -136,6 +136,147 @@ Shell operators are a powerful way to combine and control commands.
 
 *This room covers...*
 
+### Introduction to Flags and Switches
+
+Most commands accept **arguments**, which are extra keywords supplied to change how a command behaves. These are identified by a hyphen followed by a keyword, and are known as **flags** or **switches**. Without any flags, a command performs its default behaviour; flags extend that behaviour.
+
+`l`s lists the contents of the working directory but hides files/folders that begin with a dot (.). Adding the `-a` flag reveals the hidden folder(s).
+
+###### The commands `ls` and `ls -a` is shown:
+
+```
+tryhackme@linux2:~$ ls
+folder1
+tryhackme@linux2:~$ ls -a
+.hiddenfolder folder1
+```
+
+> The `-a` command is the same as using the `-all` command.
+
+Commands that accept arguments also support a `--help` option, which lists the possible options with brief descriptions and examples.
+
+###### The command `--help` is shown:
+
+```
+tryhackme@linux2:~$ ls --help
+```
+
+#### The Manual Page
+
+The manual pages are a great source of information for both system commands and applications available on both a Linux machine, which is accessible on the machine itself and online.
+
+###### Access it with the `man` command followed by the command name:
+
+```
+tryhackme@linux2:~$ man ls
+```
+
+> Inside a man page, navigate down with the down arrow key, and use the `-h` flag (with many commands) to display sizes in a human-readable format.
+
+### Filesystem Interaction
+
+The filesystem to allow us to create, move, and delete files and folders.
+
+###### The filesystem commands:
+
+| **Command** | **Full Name** | **Purpose** |
+| --- | --- | --- |
+| `touch` | touch | Create a blank file |
+| `mkdir` | make directory | Create a folder |
+| `cp` | copy | Copy a file or folder |
+| `mv` | move | Move or rename a file or folder |
+| `rm` | remove | Remove a file or folder |
+| `file` | file | Determine the type of a file |
+
+### Permissions 101
+
+Certain users cannot access certain files or folders.
+
+Running `ls -l` (or `ls -lh` for human-readable sizes) shows ten columns, but the first three are key for permissions and ownership
+
+###### An example of using the `ls -lh` command:
+
+```
+tryhackme@linux2:~$ ls -lh
+-rw-r--r-- 1 cmnatic cmnatic 0 Feb 19 10:37 file1
+-rw-r--r-- 8 cmnatic cmnatic 0 Feb 19 10:37 file2
+```
+
+> Every file/folder has three permission types: Read, Write, and Execute.
+
+#### Users vs. Groups
+
+Linux permissions are granular. A user may own a file, but a group of users can be granted the same or different permissions to that same file without affecting the owner. Real-world example: a web server's system user needs read/write access to serve an application, while a hosting company lets customers upload their own website files without becoming that system user (which would compromise security for everyone).
+
+Switching between users (`su`), unless you're root (or using `sudo`), you need the target username and their password.
+
+###### Examples using the `su` and `su -l` commands:
+
+```
+tryhackme@linux2:~$ su user2
+Password:
+```
+
+```
+tryhackme@linux2:~$ su -l user2
+Password:
+user2@linux2:~$
+```
+
+> The `-l` or `--login` switch starts a shell more like a real login, inheriting the new user's environment variables and dropping you into their home directory.
+
+#### File Permissions in Numeric Format
+
+In Linux, every file and directory has a set of permissions that control who can read, write, or execute it.
+
+These permissions are often displayed in symbolic format, such as: `rwxrwxrwx`.
+
+###### This format is split into three groups:
+
+| Section | Applies To | Example |
+| --- | --- | --- |
+| First 3 | Owner | `rwx` |
+| Next 3 | Group | `rwx` |
+| Last 3 | Others | `rwx` |
+
+###### Each letter represents a specific permission:
+
+- **`r`**: Read
+- **`w`**: Write
+- **`x`**: Execute
+
+###### By converting symbolic permissions to numbers, each permission has a value:
+
+| Permission | Value |
+| --- | --- |
+| Read (`r`) | 4 |
+| Write (`w`) | 2 |
+| Execute (`x`) | 1 |
+
+###### Some common examples:
+
+- `rwxrwxrwx` = 777
+- `rwxr-xr-x` = 755
+- `rw-r--r--` = 644
+- `rwx------` = 700
+
+> Numeric permissions matter because many commands use them and they help you spot security risks and control access to sensitive files.
+
+### Common Directories
+
+There are many common directories such as `/etc`, `/var`, `/root`, and `/tmp`.
+
+###### The common directories are shown:
+
+| Directory | Short For | Purpose |
+| --- | --- | --- |
+| `/etc` | etcetera | System configuration files used by the OS |
+| `/var` | variable data | Frequently changing data (logs, databases) |
+| `/root` | root | Home directory of the root user |
+| `/tmp` | temporary | Volatile short-term storage, cleared on reboot |
+
+> `/etc` is one of the most important root directories on your system.
+
 ### Key Takeaways
 
 ## Linux Fundamentals Part 3
