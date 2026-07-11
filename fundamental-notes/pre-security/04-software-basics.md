@@ -4,6 +4,8 @@
 
 [Data Representation](#-data-representation) · [Data Encoding](#-data-encoding) · [Python: Simple Demo](#-python-simple-demo) · [JavaScript: Simple Demo](#-javascript-simple-demo) · [Database SQL Basics](#-database-sql-basics)
 
+> Notes from the fourth section of TryHackMe's **Pre Security** learning path.
+
 ## <img src="https://github.com/user-attachments/assets/5a583db9-a169-4b89-b4f6-412866bea4fe" width="50" height="50" align="middle" alt="Data Representation room icon"> Data Representation
 
 *This room covers how computers represent data using bits and bytes, from colors and binary to hexadecimal and number conversions.*
