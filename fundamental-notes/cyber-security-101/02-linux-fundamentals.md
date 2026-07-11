@@ -142,7 +142,7 @@ Linux systems are often managed entirely from the terminal, with no graphical de
 
 ### Introduction to Flags and Switches
 
-Most commands accept **arguments**, which are extra keywords supplied to change how a command behaves. These are identified by a hyphen followed by a keyword, and are known as **flags** or **switches**. Without any flags, a command performs its default behaviour; flags extend that behavior.
+Most commands accept **arguments**, which are extra keywords supplied to change how a command behaves. These are identified by a hyphen followed by a keyword, and are known as **flags** or **switches**. Without any flags, a command performs its default behavior; flags extend that behavior.
 
 `ls` lists the contents of the working directory but hides files/folders that begin with a dot (.). Adding the `-a` flag reveals the hidden folder(s).
 
