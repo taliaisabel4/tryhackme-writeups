@@ -55,7 +55,33 @@ The **System32** folder holds critical OS files. Deleting files here can render 
 
 ### User Accounts, Profiles, and Permissions
 
+Local Windows accounts are one of two types: Administrator and Standard User.
 
+**Administrator**: Can make system-level changes; add/delete users, modify groups, change settings, and install programs.
+
+**Standard User**: Can only change their own files/folders and cannot make system-level changes (e.g., cannot install programs).
+
+When an account is created, a profile is created under `C:\Users`, built on first login by the User Profile Service.
+
+> Each profile has the same default folders, including Desktop, Documents, Downloads, Music, and Pictures.
+
+**Groups**: Each group has set permissions; when the Administrator adds a user to a group, the user inherits that group's permissions, and a user can belong to multiple groups.
+
+The command `lusrmgr.msc` or Local User and Group Management, shows two folders, Users and Groups, listing local accounts and groups with descriptions.
+
+> Run dialog box lets you quickly open items.
+
+### User Account Control (UAC)
+
+Many home users run as local administrators, but running with elevated privileges all the time increases risk; malware would run in the context of the logged-in user and could more easily compromise the system.
+
+**User Account Control** (UAC) helps prevent malware from damaging a PC and helps organizations deploy a better-managed desktop. With UAC, apps and tasks always run in the security context of a non-administrator account, unless an administrator specifically authorizes administrator-level access to the system.
+
+> UAC can block the automatic installation of unauthorized apps and prevent inadvertent changes to system settings.
+
+### Settings and the Control Panel
+
+The two primary places to make system changes are the Settings menu and the Control Panel, both accessible from the Start Menu.
 
 ## Windows Fundamentals 2
 <img width="96" height="96" alt="1773338774698-windowsfundamentals2x0x" src="https://github.com/user-attachments/assets/3011cf4b-ec7e-425f-9de4-477c12e4f539" />
