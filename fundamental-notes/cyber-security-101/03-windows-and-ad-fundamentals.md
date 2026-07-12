@@ -93,7 +93,7 @@ The two primary places to make system changes are the **Settings menu** and the 
 
 The **Task Manager** shows information about the applications and processes currently running on the system, including resource usage such as CPU and RAM.
 
-> Accessed by right-clicking the taskbar; opens in Simple View, and clicking **More details** expands it to show full information.
+> Accessed by right-clicking the taskbar; opens in **Simple View**, and clicking **More details** expands it to show full information.
 
 ## Windows Fundamentals 2
 <img width="96" height="96" alt="1773338774698-windowsfundamentals2x0x" src="https://github.com/user-attachments/assets/3011cf4b-ec7e-425f-9de4-477c12e4f539" />
