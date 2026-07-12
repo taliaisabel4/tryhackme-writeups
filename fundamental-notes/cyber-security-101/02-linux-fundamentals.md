@@ -2,11 +2,11 @@
 
 *This module builds from the first commands and filesystem navigation, through flags, permissions, and system directories, and finishes with text editors, processes, and the automation, packages, and logs that keep a system running.*
 
-[Linux Fundamentals Part 1](#-linux-fundamentals-part-1) · [Linux Fundamentals Part 2](#-linux-fundamentals-part-2) · [Linux Fundamentals Part 3](#-linux-fundamentals-part-3)
+[Linux Fundamentals 1](#-linux-fundamentals-1) · [Linux Fundamentals 2](#-linux-fundamentals-2) · [Linux Fundamentals 3](#-linux-fundamentals-3)
 
 > Notes from the second section of TryHackMe's **Cyber Security 101** learning path.
 
-## <img src="https://github.com/user-attachments/assets/705adee7-47f3-4434-b04b-c6c9b14add54" width="50" height="50" align="middle" alt="Linux Fundamentals Part 1 room icon"> Linux Fundamentals Part 1
+## <img src="https://github.com/user-attachments/assets/705adee7-47f3-4434-b04b-c6c9b14add54" width="50" height="50" align="middle" alt="Linux Fundamentals Part 1 room icon"> Linux Fundamentals 1
 
 *This room covers the terminal, the first essential commands, searching the filesystem, and shell operators.*
 
@@ -136,7 +136,7 @@ Shell operators are a powerful way to combine and control commands.
 
 Linux systems are often managed entirely from the terminal, with no graphical desktop available. A small set of commands covers most navigation and inspection needs, including `ls`, `cd`, `cat`, and `pwd` for moving around and reading files, and `find`, `grep`, and `wc -l` for locating files and searching their contents. Shell operators like `&&`, `>`, and `>>` chain commands together and redirect their output, turning individual commands into more useful workflows.
 
-## <img src="https://github.com/user-attachments/assets/a454ca29-dd2e-435d-8c54-e746534f9a79" width="50" height="50" align="middle" alt="Linux Fundamentals Part 2 room icon"> Linux Fundamentals Part 2
+## <img src="https://github.com/user-attachments/assets/a454ca29-dd2e-435d-8c54-e746534f9a79" width="50" height="50" align="middle" alt="Linux Fundamentals Part 2 room icon"> Linux Fundamentals 2
 
 *This room covers flags and manual pages, filesystem manipulation, permissions and user switching, and the common system directories.*
 
@@ -283,7 +283,7 @@ There are many common directories such as `/etc`, `/var`, `/root`, and `/tmp`.
 
 Flags extend a command's default behavior, and `--help` and `ma`n make any unfamiliar command self-documenting. Linux permissions are granular, controlling read, write, and execute access separately for the owner, the group, and everyone else, which lets multiple users share a system without granting each other more access than they need. Knowing the purpose of directories like `/etc`, `/var`, `/root`, and `/tmp` tells you where configuration lives, where logs accumulate, and where an attacker might look first.
 
-## <img src="https://github.com/user-attachments/assets/69b3fdb6-b245-4cd1-8149-7b4122a6ec60" width="50" height="50" align="middle" alt="Linux Fundamentals Part 3 room icon"> Linux Fundamentals Part 3
+## <img src="https://github.com/user-attachments/assets/69b3fdb6-b245-4cd1-8149-7b4122a6ec60" width="50" height="50" align="middle" alt="Linux Fundamentals Part 3 room icon"> Linux Fundamentals 3
 
 *This room covers terminal text editors, file transfer utilities, process management, and maintaining a system through automation, packages, and logs.*
 
