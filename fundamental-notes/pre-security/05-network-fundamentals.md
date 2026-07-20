@@ -4,7 +4,7 @@
 
 []()
 
-> Notes from the ...
+> Notes from the ... section of TryHackMe Cyber Security 101 learning path.
 
 ### Key Takeaways
 
