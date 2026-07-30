@@ -342,7 +342,7 @@ The final section makes the game repeatable so the user can keep guessing until 
 
 This is done with a `while` loop, which repeats its body as long as its condition remains true. The condition `while (guess !== secret)` keeps prompting for new guesses while the guess is not equal to the secret, where `!==` means "not equal." Everything from the earlier tasks (prompting for input, converting it to a number, incrementing `tries`, and running the conditional feedback) now lives inside the loop, so the program continues until the correct number is entered.
 
-###### Below is the complete final game, saved as guess_v3.js:
+###### Below is the complete final game, saved as `guess_v3.js`:
 
 ```javascript
 // Repeat until the user guesses the secret number.
