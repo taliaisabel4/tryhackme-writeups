@@ -1,6 +1,6 @@
 # Introduction to Cyber Security
 
-This module introduces the two halves of the field, offensive and defensive security, and the range of career roles that sit across them.
+> This module introduces the attacker's side and defender's side of security and finishes with the career roles that span both.
 
 [Offensive Security Introduction](#-offensive-security-introduction) · [Defensive Security Introduction](#-defensive-security-introduction) · [Careers in Cyber](#-careers-in-cyber)
 
@@ -8,27 +8,27 @@ This module introduces the two halves of the field, offensive and defensive secu
 
 ## <img src="https://github.com/user-attachments/assets/14e8c19d-29b1-40ed-aecc-1ec8b53df85b" width="50" height="50" align="middle" alt="Offensive Security Introduction room icon"> Offensive Security Introduction
 
-*This room covers the introduction to offensive security.*
+> This room covers the introduction to offensive security.
 
-**Offensive Security** is the practice of proactively attacking systems, networks, and applications, thinking and acting like an attacker, to find and exploit vulnerabilities before malicious actors do.
+**Offensive Security** is the practice of breaking into systems, networks, and applications with authorization, using the same tools and techniques as real attackers, so that vulnerabilities can be found and fixed before they are exploited.
 
-> Red teams are part of the offensive security landscape.
+`Red teams are part of the offensive security landscape.`
 
 ### Key Takeaways
 
-Offensive security is about adopting an attacker's mindset to find weaknesses before real adversaries can exploit them. The work is proactive rather than reactive. Offensive practitioners deliberately probe systems, networks, and applications for exploitable flaws. Red teams operate in this space, emulating real-world attacks so that gaps can be identified and fixed before an attacker can reach them.
+Offensive security approaches protection from the attacker's side. Rather than waiting for an incident, practitioners actively search for weaknesses by attempting to compromise systems the way an adversary would. A finding only becomes valuable once it is reported and remediated, which is what separates authorized testing from a real attack. Red teams take this mindset furthest, emulating realistic threats to show how well an organization holds up under pressure.
 
 ## <img src="https://github.com/user-attachments/assets/20883c6a-a6eb-49d1-bbb5-d850fe103e62" width="50" height="50" align="middle" alt="Defensive Security Introduction room icon"> Defensive Security Introduction
 
-*This room covers the introduction to defensive security.*
+> This room covers the introduction to defensive security.
 
-**Defensive Security** is the practice of protecting systems and responding to threats, with a focus on preventing intrusions and detecting them when they occur.
+**Defensive Security** is the practice of protecting an organization's systems and data by preventing intrusions where possible and detecting, investigating, and responding to threats when prevention falls short.
 
-> Blue teams are part of the defensive security landscape.
+`Blue teams are part of the defensive security landscape.`
 
 ### Key Takeaways
 
-Defensive security is the counterpart to offensive work. Its goal is to protect systems and to detect and respond to threats as they arise. It combines prevention, stopping intrusions before they succeed, with detection and response, identifying activity that slips through and acting on it. Blue teams operate in this space, monitoring environments and reacting to incidents to limit the damage an attacker can do.
+Defensive security works on two fronts: keeping attackers out and catching them when they get in. Prevention reduces the attack surface through security controls, system hardening, and user awareness. Detection and response assume that some threats will slip through, relying on monitoring and investigation to contain them quickly. Blue teams own this work, turning visibility into action to limit the impact of an incident.
 
 ## <img src="https://github.com/user-attachments/assets/bbecddfc-b875-43b8-86b4-c416afba6daf" width="50" height="50" align="middle" alt="Careers in Cyber room icon"> Careers in Cyber
 
