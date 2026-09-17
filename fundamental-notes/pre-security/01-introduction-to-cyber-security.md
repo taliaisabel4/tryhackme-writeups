@@ -1,6 +1,6 @@
 # Introduction to Cyber Security
 
-> This module introduces the attacker's side and defender's side of security and finishes with the career roles that span both.
+> **This module introduces the attacker's side and defender's side of security and finishes with the career roles that span both.**
 
 [Offensive Security Introduction](#-offensive-security-introduction) · [Defensive Security Introduction](#-defensive-security-introduction) · [Careers in Cyber](#-careers-in-cyber)
 
@@ -8,7 +8,7 @@
 
 ## <img src="https://github.com/user-attachments/assets/14e8c19d-29b1-40ed-aecc-1ec8b53df85b" width="50" height="50" align="middle" alt="Offensive Security Introduction room icon"> Offensive Security Introduction
 
-> This room covers the introduction to offensive security.
+> **This room covers the introduction to offensive security.**
 
 **Offensive Security** is the practice of breaking into systems, networks, and applications with authorization, using the same tools and techniques as real attackers, so that vulnerabilities can be found and fixed before they are exploited.
 
@@ -20,7 +20,7 @@ Offensive security approaches protection from the attacker's side. Rather than w
 
 ## <img src="https://github.com/user-attachments/assets/20883c6a-a6eb-49d1-bbb5-d850fe103e62" width="50" height="50" align="middle" alt="Defensive Security Introduction room icon"> Defensive Security Introduction
 
-> This room covers the introduction to defensive security.
+> **This room covers the introduction to defensive security.**
 
 **Defensive Security** is the practice of protecting an organization's systems and data by preventing intrusions where possible and detecting, investigating, and responding to threats when prevention falls short.
 
