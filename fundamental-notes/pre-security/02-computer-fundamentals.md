@@ -1,32 +1,32 @@
 # Computer Fundamentals
 
-*This module builds up from a single computer's internal components to how machines communicate with each other, run virtualized systems, and scale into the cloud.*
+> **This module moves from the components inside a single computer to how machines communicate with each other, and finishes with virtualization and the cloud.**
 
 [Inside a Computer System](#-inside-a-computer-system) · [Computer Types](#-computer-types) · [Client-Server Basics](#-client-server-basics) · [Virtualization Basics](#-virtualization-basics) · [Cloud Computing Fundamentals](#-cloud-computing-fundamentals)
 
-> Notes from the second section of TryHackMe's **Pre Security** learning path.
+`The second section of TryHackMe's Pre Security learning path.`
 
 ## <img src="https://github.com/user-attachments/assets/d6d04e77-bb23-4336-accf-24059a0d8334" width="50" height="50" align="middle" alt="Inside a Computer System room icon"> Inside a Computer System
 
-*This room covers the basic components of a computer system and the boot process it runs through on startup.*
+*This room covers the core hardware components inside a computer system and the boot sequence it runs through from power button to operating system.*
 
 ### Core Components of the Computer System
 
-**Central Processing Unit** (CPU): The "brain" of the computer. It executes instructions and performs the calculations and logical operations that drive every task the system carries out.
+**Central Processing Unit** (CPU): The component that executes program instructions, often described as the brain of the computer. It fetches each instruction from memory, decodes it, and performs the arithmetic and logic that produce a result.
 
-**Motherboard**: The main circuit board that connects all the other components and lets them communicate. Everything plugs into it (CPU, RAM, storage, expansion cards).
+**Motherboard**: The main circuit board that every other component connects to, through a socket, a slot, or a cable. It carries the pathways that let the CPU, RAM, storage, and expansion cards exchange data and receive power.
 
-**Random Access Memory** (RAM): Fast, temporary storage that holds data and programs the CPU is actively using. It's volatile, meaning its contents are lost when the machine powers off.
+**Random Access Memory** (RAM): Fast, temporary storage that holds the data and programs the CPU is actively working on. It is volatile, so everything in it is lost the moment the system loses power.
 
-**Storage** (SSD/HDD): Non-volatile storage that retains data long-term, even without power. HDDs use spinning magnetic disks, while SSDs use flash memory.
+**Storage** (SSD/HDD): Non-volatile storage that keeps data between sessions, including the operating system, applications, and user files. HDDs write to spinning magnetic disks, while SSDs use flash memory with no moving parts, which makes them faster and more durable.
 
-**Power Supply** (PSU): Converts mains electricity from the wall into the regulated low-voltage power the internal components need, and distributes it to them.
+**Power Supply** (PSU): Converts the alternating current from a wall outlet into the regulated low-voltage direct current the internal components require. It then distributes that power across the motherboard, drives, and other hardware.
 
-**Network Adapter**: The component that connects the computer to a network, enabling communication with other devices. It can be wired (Ethernet) or wireless (Wi-Fi).
+**Network Adapter** (NIC): The component that connects the computer to a network and handles sending and receiving data across it. It can be wired through an Ethernet port or wireless through Wi-Fi.
 
-**Graphics Card**: Handles rendering images, video, and graphics for display. It offloads visual processing from the CPU and is essential for graphics-intensive work like gaming or 3D rendering.
+**Graphics Card** (GPU): Handles rendering the images, video, and 3D graphics sent to a display. It takes that work off the CPU, which matters most for graphics-intensive tasks such as gaming, video editing, and 3D rendering.
 
-**Input/Output** (I/O): The mechanisms by which a computer receives data and sends it back out. Input devices (keyboard, mouse) feed data in, while output devices (monitor, printer) deliver results.
+**Input/Output** (I/O): The exchange of data between the computer and the outside world. Input devices such as a keyboard or mouse send data into the system, while output devices such as a monitor or printer deliver results back to the user.
 
 ### Boot Process of the Computer System
 
