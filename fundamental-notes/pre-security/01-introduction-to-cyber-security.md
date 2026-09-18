@@ -40,21 +40,21 @@ The role of a **security engineer** is to design, build, and maintain the system
 
 ###### This role involves:
 
-- Designing and maintaining security systems.
-- Keeping up to date with the latest hacker techniques and tools.
-- Documenting processes and procedures.
-- Assessing risk and making sure systems and applications are protected against vulnerabilities.
+- Designing and maintaining security systems
+- Keeping up to date with the latest hacker techniques and tools
+- Documenting processes and procedures
+- Assessing risk and making sure systems and applications are protected against vulnerabilities
 
 ### Penetration Testing
 
-The role of a **penetration tester** is to attack systems, networks, and applications, with authorization, and to find exploitable vulnerabilities before real attackers do. They simulate real-world attacks and report their findings so weaknesses can be fixed.
+The role of a **penetration tester** attack systems, networks, and applications with authorization to find exploitable weaknesses before a real attacker does. The value of the role lies in what comes after the test, since findings only reduce risk once they are documented and handed to the teams who can fix them.
 
 ###### This role involves:
 
-- Testing the security of computer systems, networks, and websites.
-- Performing security assessments, audits, and analyzing security policies.
-- Analyzing the results and creating reports.
-- Advising an organization on how to prevent the attack from occurring.
+- Testing the security of computer systems, networks, and websites
+- Performing security assessments, audits, and analyzing security policies
+- Analyzing the results and creating reports
+- Advising an organization on how to prevent the attack from occurring
 
 ### Security Analysis
 
