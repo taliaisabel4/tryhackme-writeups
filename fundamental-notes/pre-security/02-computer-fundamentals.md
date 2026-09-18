@@ -8,7 +8,7 @@
 
 ## <img src="https://github.com/user-attachments/assets/d6d04e77-bb23-4336-accf-24059a0d8334" width="50" height="50" align="middle" alt="Inside a Computer System room icon"> Inside a Computer System
 
-*This room covers the core hardware components inside a computer system and the boot sequence it runs through from power button to operating system.*
+> **This room covers the core hardware components inside a computer system and the boot sequence it runs through from power button to operating system.**
 
 ### Core Components of the Computer System
 
@@ -30,28 +30,28 @@
 
 ### Boot Process of the Computer System
 
-Once the core components are installed in the computer system, it is time to boot up the system.
+Once the core components are in place, the system needs a way to bring them online and hand control to an operating system. That sequence is the **boot process**, and it runs the same way every time the machine is powered on.
 
 ###### The steps a computer system goes through before it shows you a working interface (in the form of an operating system) are as follows:
 
 **Step 1: Press the power button**
-> When we press the power button on our computer system, a signal is sent to the PSU to allow power to flow. Once power is distributed to the components, the system begins to boot up.
+> Pressing the power button signals the PSU to begin supplying power to the motherboard and everything attached to it. Once power is flowing and stable, the system starts the boot sequence.
 
 **Step 2: Firmware starts**
-> Once the system has power, its core components are up and running, but the operating system is not yet loaded. A computer system contains firmware that allows all its components to start up. The central system that manages this is called the Unified Extensible Firmware Interface (UEFI).
+> At this point the components have power but nothing is loaded yet, since the operating system still sits on storage. Firmware built into the motherboard takes over first and initializes the hardware so it can be used. On modern systems that firmware is the Unified Extensible Firmware Interface (UEFI), which replaced the older BIOS.
 
 **Step 3: Power-on self test**
-> Now that the system is up and running, it is time to test if everything is functioning as it should. If something isn't, alarm signals (such as beep codes) are raised. One of the routines that the UEFI loads is the Power-On Self Test (POST), which checks that every required component is present, configured correctly, and functioning.
+> One of the first routines the UEFI runs is the Power-On Self Test (POST), which confirms that every required component is present, configured correctly, and responding. If something fails the test, the system reports it through beep codes or on-screen error messages instead of continuing. Catching a fault here stops the machine from trying to boot on hardware that cannot support it.
 
 **Step 4: Select boot device**
-> Once the system is up and running, configured correctly, and fully functional, it searches for the location of the boot-up routine to start loading the operating system. The UEFI holds an ordered list which prioritizes which device to look at first for the boot-up routine.
+> With the hardware verified, the UEFI has to find where the operating system lives. It works through an ordered boot list, checking each device in priority order, such as an internal drive, a USB drive, or a network location, until it finds one that holds a valid boot routine.
 
 **Step 5: Initiate bootloader**
-> Now that the system knows which device holds the boot-up routine, it initiates the load routine to start it. On the selected boot device, the bootloader is initiated. This bootloader transfers the operating system from the selected boot device to the Random Access Memory (RAM). Once the OS is transferred, the UEFI hands over control of the different components to the OS.
+> The UEFI then hands off to the bootloader stored on the selected device. The bootloader copies the operating system from storage into RAM and starts it. Control passes from the firmware to the operating system, which takes over managing the hardware and presents the interface you log in to.
 
 ### Key Takeaways
 
-A computer system is built from core hardware components that each serve a distinct purpose: the CPU executes instructions, RAM provides fast volatile working memory, storage retains data without power, the motherboard connects everything, and the PSU supplies power. Startup follows a defined sequence: the power button engages the PSU, UEFI firmware brings the components up and runs POST to verify them, a boot device is selected, and the bootloader loads the operating system into RAM. Understanding both the parts and the boot chain is the foundation for reasoning about how a system behaves and where it can fail or be interfered with.
+A computer system is built from components with distinct jobs: the CPU executes instructions, RAM holds what is in active use, storage keeps data without power, the motherboard connects everything, and the PSU supplies electricity. Booting is a fixed sequence that moves from power, to firmware initialization, to hardware verification through POST, to selecting a boot device, to the bootloader loading the operating system into RAM. Each stage depends on the one before it, which is why a failure early in the chain halts the process rather than producing a partly working system. Knowing this sequence makes it easier to reason about where a machine can fail and where firmware-level tampering would sit.
 
 ## <img src="https://github.com/user-attachments/assets/4090bd2d-f3eb-49f6-b09a-befeb687f41c" width="50" height="50" align="middle" alt="Computer Types room icon"> Computer Types
 
