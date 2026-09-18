@@ -32,11 +32,11 @@ Defensive security works on two fronts: keeping attackers out and catching them 
 
 ## <img src="https://github.com/user-attachments/assets/bbecddfc-b875-43b8-86b4-c416afba6daf" width="50" height="50" align="middle" alt="Careers in Cyber room icon"> Careers in Cyber
 
-> *This room covers the different career roles in cyber security.*
+> **This room covers the different career roles in cyber security.**
 
 ### Security Engineering
 
-The role of a **security engineer** is to design, build, and maintain an organization's security systems and controls. They implement the defenses and continuously improve them based on emerging threats.
+The role of a **security engineer** is to design, build, and maintain the systems and controls that keep an organization secure. The work is ongoing rather than one time, since defenses have to be revisited and strengthened as new threats and attack techniques emerge.
 
 ###### This role involves:
 
