@@ -4,7 +4,7 @@
 
 [Inside a Computer System](#-inside-a-computer-system) · [Computer Types](#-computer-types) · [Client-Server Basics](#-client-server-basics) · [Virtualization Basics](#-virtualization-basics) · [Cloud Computing Fundamentals](#-cloud-computing-fundamentals)
 
-`The second section of TryHackMe's Pre Security learning path.`
+`Notes from the second section of TryHackMe's Pre Security learning path.`
 
 ## <img src="https://github.com/user-attachments/assets/d6d04e77-bb23-4336-accf-24059a0d8334" width="50" height="50" align="middle" alt="Inside a Computer System room icon"> Inside a Computer System
 
