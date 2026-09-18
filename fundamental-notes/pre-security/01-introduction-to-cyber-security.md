@@ -32,7 +32,7 @@ Defensive security works on two fronts: keeping attackers out and catching them 
 
 ## <img src="https://github.com/user-attachments/assets/bbecddfc-b875-43b8-86b4-c416afba6daf" width="50" height="50" align="middle" alt="Careers in Cyber room icon"> Careers in Cyber
 
-*This room covers the different career roles in cyber security.*
+> *This room covers the different career roles in cyber security.*
 
 ### Security Engineering
 
