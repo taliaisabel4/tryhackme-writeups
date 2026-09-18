@@ -58,7 +58,7 @@ The role of a **penetration tester** attack systems, networks, and applications 
 
 ### Security Analysis
 
-The role of a **security analyst** is to monitor an organization's systems and networks for threats, investigate alerts, and respond to suspicious activity. They triage incidents and escalate when needed.
+The role of a **security analyst** is to monitor an organization's system and network for signs of malicious activity. Analysts triage incoming alerts, investigate the ones that look suspicious, and escalate confirmed incidents so they can be contained before the damage spreads.
 
 ###### This role involves:
 
@@ -69,4 +69,4 @@ The role of a **security analyst** is to monitor an organization's systems and n
 
 ### Key Takeaways
 
-Cyber security is not a single job but a spectrum of roles spanning both offensive and defensive work. Security engineers build and maintain the defenses, penetration testers probe systems for weaknesses under authorization, and security analysts monitor for and investigate suspicious activity. The roles differ in day-to-day focus but share a common goal: reducing the risk that an organization is compromised.
+Cyber security is not a single job but a spectrum of roles that spans offensive and defensive work. Security engineers build and maintain the controls that protect an organization, penetration testers attack those controls under authorization to expose what they miss, and security analysts watch for the activity that gets past them. The roles differ in daily focus and in the skills they lean on, but each one depends on the output of the others. All three serve the same goal of reducing the chance that an organization is compromised and limiting the impact when it is.
