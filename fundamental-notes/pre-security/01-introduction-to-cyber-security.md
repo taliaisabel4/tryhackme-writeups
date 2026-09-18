@@ -47,25 +47,25 @@ The role of a **security engineer** is to design, build, and maintain the system
 
 ### Penetration Testing
 
-The role of a **penetration tester** attack systems, networks, and applications with authorization to find exploitable weaknesses before a real attacker does. The value of the role lies in what comes after the test, since findings only reduce risk once they are documented and handed to the teams who can fix them.
+The role of a **penetration tester** is to attack systems, networks, and applications with authorization to find exploitable weaknesses before a real attacker does. The value of the role lies in what comes after the test, since findings only reduce risk once they are documented and handed to the teams who can fix them.
 
 ###### This role involves:
 
 - Testing the security of computer systems, networks, and websites
-- Performing security assessments, audits, and analyzing security policies
+- Performing security assessments and audits, and analyzing security policies
 - Analyzing the results and creating reports
-- Advising an organization on how to prevent the attack from occurring
+- Advising an organization on how to prevent attacks from occurring
 
 ### Security Analysis
 
-The role of a **security analyst** is to monitor an organization's system and network for signs of malicious activity. Analysts triage incoming alerts, investigate the ones that look suspicious, and escalate confirmed incidents so they can be contained before the damage spreads.
+The role of a **security analyst** is to monitor an organization's systems and networks for signs of malicious activity. Analysts triage incoming alerts, investigate the ones that look suspicious, and escalate confirmed incidents so they can be contained before the damage spreads.
 
 ###### This role involves:
 
-- Monitoring activity taking place on the devices and network of the organization.
-- Investigating unusual or suspicious activity, such as strange logins.
-- Piecing together information to understand what has happened, when, and how.
-- Working with other teams to improve the organization's defenses.
+- Monitoring activity taking place on the devices and network of the organization
+- Investigating unusual or suspicious activity, such as strange logins
+- Piecing together information to understand what has happened, when, and how
+- Working with other teams to improve the organization's defenses
 
 ### Key Takeaways
 
